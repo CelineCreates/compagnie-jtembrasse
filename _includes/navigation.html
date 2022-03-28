@@ -1,7 +1,18 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+<header>
+
+
+    <div id="container-logo">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/139x175" /></a>
+    </div>
+    <div id="container-nav">
+        <nav>
+            <ol id="menu">
+                {% for item in site.data.navigation %}
+                <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
       {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
+    </a></li>
+                {% endfor %}
+            </ol>
+        </nav>
+    </div>
+</header>

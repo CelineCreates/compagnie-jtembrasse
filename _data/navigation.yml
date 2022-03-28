@@ -1,8 +1,8 @@
-- name: Home
+- name: Accueil
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Spectacles
+  link: /spectacles.html
+- name: L'équipe
+  link: /equipe.html
+- name: Formations
+  link: /formations.html
