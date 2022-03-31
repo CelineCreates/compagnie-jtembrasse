@@ -7,12 +7,17 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+  {% endif %}
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+     
   </head>
 
   <body>
@@ -23,20 +28,9 @@
       ><img src="https://via.placeholder.com/139x175"
     /></a>
   </div>
-  {%- comment -%}
-  <div id="container-nav">
-    <nav>
-      <ol id="menu">
-        <li><a href="">Accueil</a></li>
-        <li><a href="">Spectacles</a></li>
-        <li><a href="">L'équipe</a></li>
-        <li><a href="">Formations</a></li>
-      </ol>
-    </nav>
-  </div>
-  {%- endcomment -%}
+{% include navigation.html %}
 </header>
-    {% include navigation.html %} {{ content }}
+     {{ content }}
   </body>
   <footer>
     <div id="texte-footer">

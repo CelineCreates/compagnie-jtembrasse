@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Fiche - Cie J't'embrasse
+custom_css: fiches
 ---
 
 <div id="retour">

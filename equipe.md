@@ -1,7 +1,9 @@
---- 
-layout: default 
-title: L'équipe - Cie J't'embrasse 
 ---
+layout: default
+title: L'équipe - Cie J't'embrasse
+custom_css: equipe
+---
+
 <div id="presentation">
     <div id="presentation-content">
         <h2>PRESENTATION DE L'ENTREPRISE </h2>

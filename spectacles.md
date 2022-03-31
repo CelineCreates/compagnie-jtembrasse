@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Spectacles - Cie J't'embrasse
+custom_css: spectacles
 ---
 
 <div id="titre">

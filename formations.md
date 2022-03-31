@@ -1,6 +1,7 @@
---- 
-layout: default 
-title: Formations - Cie J't'embrasse 
+---
+layout: default
+title: Formations - Cie J't'embrasse
+custom_css: formations
 ---
 
 <div id="prestation-titre">

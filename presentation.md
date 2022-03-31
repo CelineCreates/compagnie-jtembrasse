@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Présentation - Cie J't'embrasse
+custom_css: presentation
 ---
 
 <div id="photo-equipe">
