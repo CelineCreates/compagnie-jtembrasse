@@ -35,10 +35,6 @@
   width: 139px;
 }
 
-#container-nav {
-  width: content;
-}
-
 header {
   width: 100%;
   display: flex;
@@ -51,28 +47,12 @@ header {
   justify-content: space-around;
 }
 
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  background-color: yellow;
-  border: solid black;
-}
-
-#texte-footer {
-  display: flex;
-  width: 90%;
-  flex-direction: column;
-  align-items: center;
-}
-
 #texte-un {
-  width: max-content;
+  width: fit-content;
 }
 
 #texte-deux {
-  width: max-content;
+  width: fit-content;
 }
 
 #overlay {
@@ -95,12 +75,6 @@ footer {
   height: 100%;
   opacity: 0.5;
   filter: blur(3px);
-}
-
-body {
-  width: 100%;
-  height: 100%;
-  display: flex;
 }
 
 #mon-image {
@@ -163,12 +137,6 @@ body {
   left: 10px;
 }
 
-#container-nav {
-  right: 10px;
-  position: absolute;
-  right: 200px;
-}
-
 .btn-reserver {
   width: 149px;
   height: 47px;
@@ -196,23 +164,30 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  #menu {
-    padding-top: 100px;
-    background: #fff;
-    height: 100vh;
-    max-width: 300px;
-    transform: translate(-150%);
-    display: flex;
+@media all and (max-width: 990px) {
+  #main-content {
     flex-direction: column;
-    margin-left: -40px;
+    overflow: scroll;
+  }
+  #photo-accueil {
+    // display: none;
+  }
+  #texte-accueil {
+    width: fit-content;
     padding-left: 50px;
-    transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
+    padding-right: 50px;
+    margin-top: 200px;
   }
-  #menu li {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
+  #content-accueil {
+    width: 100%;
   }
+  #content {
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  #container-logo {
+    // display: none;
+  }
+
+  //   --------------MENU----------------
 }

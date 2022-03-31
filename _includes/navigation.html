@@ -6,6 +6,11 @@
     </div> -->
     <div id="container-nav">
         <nav>
+            	<div id="burger">
+<label id="label-menu" for="toggle">☰</label>
+    <input type="checkbox" id="toggle">
+                </div>
+
             <ol id="menu">
                 {% for item in site.data.navigation %}
                 <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
