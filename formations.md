@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Formations - Cie J't'embrasse
+layout: default
 custom_css: formations
 ---
 
