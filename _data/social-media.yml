@@ -1,11 +1,11 @@
 facebook:
   id: "your-facebook-username"
-  href: "https://www.facebook.com/"
+  href: "https://www.facebook.com/Cie-Jtembrasse-107606308245139/"
   title: "Facebook"
   image: "assets/images/footer/facebook.png"
 
 instagram:
   id: "your-instagram-name"
-  href: "https://www.instagram.com/"
+  href: "https://www.instagram.com/cie_jtembrasse/"
   title: "Instagram"
   image: "assets/images/footer/instagram.png"
