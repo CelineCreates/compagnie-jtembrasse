@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>CIE J't'embrasse</title>
-    <meta name="author" content="CelineCreates">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="author" content="CelineCreates" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+      <div id="content">
+          <header>
+  <div id="container-logo">
+    <a href="https://placeholder.com"
+      ><img src="https://via.placeholder.com/139x175"
+    /></a>
+  </div>
+  {%- comment -%}
+  <div id="container-nav">
+    <nav>
+      <ol id="menu">
+        <li><a href="">Accueil</a></li>
+        <li><a href="">Spectacles</a></li>
+        <li><a href="">L'équipe</a></li>
+        <li><a href="">Formations</a></li>
+      </ol>
+    </nav>
+  </div>
+  {%- endcomment -%}
+</header>
     {% include navigation.html %} {{ content }}
-</body>
-<script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script>
-
+  </body>
+  <footer>
+    <div id="texte-footer">
+      <div id="texte-un">
+        <span
+          >La Compagnie J't'embrasse est une compagnie d'improvisation
+          professionnelle fondée en 2021, par Maxime Robert & Florian
+          Bresler.</span
+        >
+      </div>
+      <div id="texte-deux">
+        <span>Site blablabla moi</span>
+      </div>
+    </div>
+    <div id="reseaux">
+      <a href="https://placeholder.com"
+        ><img src="https://via.placeholder.com/39x39"
+      /></a>
+      <a href="https://placeholder.com"
+        ><img src="https://via.placeholder.com/39x39"
+      /></a>
+    </div>
+  </footer>
+  </div>
+  <script src="{{ base.url | prepend: site.url }}/assets/js/test.js"></script>
 </html>
