@@ -1,4 +1,6 @@
 ---
+title: Kiwifruit
+date: 2018-08-22 00:00:00 Z
 author: ted
 ---
 

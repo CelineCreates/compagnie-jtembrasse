@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Fiche - Cie J't'embrasse
+layout: default
 custom_css: fiches
 ---
 

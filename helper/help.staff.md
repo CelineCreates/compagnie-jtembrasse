@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Staff
+layout: default
 ---
 
 <h1>Staff</h1>

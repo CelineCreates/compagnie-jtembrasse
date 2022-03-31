@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Présentation - Cie J't'embrasse
+layout: default
 custom_css: presentation
 ---
 

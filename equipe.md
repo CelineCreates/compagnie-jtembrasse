@@ -1,6 +1,6 @@
 ---
-layout: default
 title: L'équipe - Cie J't'embrasse
+layout: default
 custom_css: equipe
 ---
 
