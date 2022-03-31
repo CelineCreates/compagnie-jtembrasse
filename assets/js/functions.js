@@ -20,7 +20,7 @@ $(document).ready(function () {
   if ($(window).width() < 990) {
     elMenu.hide();
     $("#photo-accueil").hide();
-    let imageUrl = "https://via.placeholder.com/542x768";
+    let imageUrl = "assets/images/index/affiche-accueil.png";
     $("#texte-accueil").css("background-image", "url(" + imageUrl + ")");
     $("#texte-accueil").css("background-repeat", "no-repeat");
     $("#texte-accueil").css("background-size", "cover");
@@ -33,7 +33,7 @@ $(document).ready(function () {
     if ($(window).width() < 990) {
       elMenu.hide();
       $("#photo-accueil").hide();
-      let imageUrl = "https://via.placeholder.com/542x768";
+      let imageUrl = "assets/images/index/affiche-accueil.png";
       $("#texte-accueil").css("background-image", "url(" + imageUrl + ")");
       $("#texte-accueil").css("background-repeat", "no-repeat");
       $("#texte-accueil").css("background-size", "cover");
