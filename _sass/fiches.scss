@@ -39,11 +39,11 @@
   width: content;
 }
 
-#container-nav {
-  right: 10px;
-  position: absolute;
-  right: 200px;
-}
+// #container-nav {
+//   right: 10px;
+//   position: absolute;
+//   right: 200px;
+// }
 
 header {
   width: 100%;
@@ -56,6 +56,7 @@ header {
 }
 
 #fiche {
+  overflow: auto;
   display: flex;
   width: 100%;
   padding-bottom: 20px;
@@ -82,6 +83,7 @@ header {
   flex-direction: column;
   margin-right: 80px;
   margin-left: 20px;
+  overflow: auto;
 }
 
 #textes-fiche > h1 {
@@ -209,4 +211,19 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+@media all and (max-width: 990px) {
+  header {
+    margin-bottom: 200px;
+  }
+}
+
+@media all and (max-width: 1027px) {
+  #fiche {
+    flex-direction: column-reverse;
+  }
+  #box {
+    flex-direction: row-reverse;
+  }
 }
