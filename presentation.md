@@ -1,7 +1,7 @@
 ---
 title: Présentation - Cie J't'embrasse
-layout: default
 custom_css: presentation
+layout: default
 ---
 
 <div id="photo-equipe">
@@ -29,6 +29,7 @@ custom_css: presentation
             <p>
                 Il tourne également a la télé, dans des publicités et au cinéma ou il accumule des rôles secondaires mais aussi principaux dans de nombreux court métrage tel que, dernièrement « REPLIQUE » réalisé par Eliot Charpentier.
             </p>
+![wallhaven-k9vygm.png](/uploads/wallhaven-k9vygm.png)
             <p>
                 Mais aussi des longs métrages comme « Lumière Noire » (réalisé par Enguerrand Jouvin) un film dans lequel il tient l’un des rôles principaux. Des petits rôles dans « Le Brio » d’Yvan Attal, « Le Lyon » de Ludovic Colbeau-Justin et « A nos âges » de Robin
                 Sykes. </p>
