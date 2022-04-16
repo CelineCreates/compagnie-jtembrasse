@@ -1,5 +1,6 @@
 ---
 title: Formations - Cie J't'embrasse
+position: 3
 layout: default
 custom_css: formations
 custom_js: formations

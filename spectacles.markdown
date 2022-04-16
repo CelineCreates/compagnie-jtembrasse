@@ -1,5 +1,6 @@
 ---
 title: Spectacles - Cie J't'embrasse
+position: 5
 layout: default
 custom_css: spectacles
 custom_js: spectacles

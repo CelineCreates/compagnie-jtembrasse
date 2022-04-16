@@ -1,5 +1,6 @@
 ---
 title: L'équipe - Cie J't'embrasse
+position: 1
 layout: default
 custom_css: equipe
 custom_js: equipe
