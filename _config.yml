@@ -1,28 +1,16 @@
 ---
 title: Compagnie Jtembrasse
-timezone: UTC
+timezone: Europe/Paris
 collections:
-  authors:
-    title: Authors
-    output: true
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
+  spectacles:
     output: true
 defaults:
-- scope:
-    path: ''
-    type: authors
-  values:
-    layout: author
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-- scope:
-    path: ''
-  values:
-    layout: default
+  - scope:
+      path: ""
+      type: "spectacles"
+    values:
+      layout: "fiche"
+  - scope:
+      path: ""
+    values:
+      layout: default

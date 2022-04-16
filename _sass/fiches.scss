@@ -226,4 +226,34 @@ header {
   #box {
     flex-direction: row-reverse;
   }
+  #textes-fiche {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  #textes-fiche > p,
+  #textes-fiche > h1,
+  #details {
+    padding: 15px;
+  }
+  #content {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  #teaser {
+    display: flex;
+    flex-direction: column;
+  }
+  #distribution {
+    text-align: center;
+  }
+  #partager {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #images-min {
+    display: none;
+  }
 }
