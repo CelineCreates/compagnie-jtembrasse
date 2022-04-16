@@ -21,7 +21,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 #content { padding-left: 150px; }
 
 /* Css pour les spectacles **/
-#spectacles { width: 100%; height: inherit; border-radius: 52px; }
+#spectacles { width: 100%; height: inherit; border-radius: 20px; border: solid; border-color: #f2977d; border-radius: 52px; display: flex; align-items: center; }
 
 #titre { width: 100%; display: flex; justify-content: end; margin-top: -35px; margin-bottom: 15px; }
 
@@ -42,10 +42,6 @@ header { width: 100%; display: flex; justify-content: space-between; }
 .container-btn-reserver { display: flex; justify-content: center; }
 
 .une-carte { text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: fit-content; max-width: fit-content !important; width: fit-content; max-width: fit-content !important; }
-
-.bx-wrapper { border-radius: inherit; height: -webkit-fill-available; border: solid #f2977d !important; }
-
-.bx-wrapper > .bx-viewport { height: 100% !important; border-radius: inherit; }
 
 @media all and (max-width: 990px) { #content { width: 100%; height: 100%; padding-left: 0%; padding-right: 0%; } #titre { width: 100%; display: flex; justify-content: center; margin-top: 35px; margin-bottom: 15px; } #spectacles { width: 100%; height: 100%; border: none; border-radius: 52px; } #contenu { height: auto; display: flex; width: 100%; align-items: center; flex-direction: column; overflow: auto; } .une-carte { margin-bottom: 2%; margin-right: inherit; width: 700px; } #reseaux { display: flex; align-items: center; } header { margin-bottom: 125px; } }
 

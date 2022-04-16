@@ -1,9 +1,12 @@
 ---
 title: L'équipe - Cie J't'embrasse
 position: 1
-layout: default
+layout: equipe
 custom_css: equipe
 custom_js: equipe
+nature: equipe
+photo_presentation_1: assets/images/presentations/FB vide.png
+photo_presentation_2: assets/images/presentations/MR vide.png
 ---
 
 <div id="presentation">
@@ -43,45 +46,5 @@ custom_js: equipe
       Et comme on dit au sein de la compagnie, <br />
       <span class="gras">"J'T'EMBRASSE !"</span>
     </p>
-  </div>
-</div>
-<div id="photo-equipe">
-  <h2 class="gros-titre">Présentation de l'équipe</h2>
-  <div id="photo">
-    <div id="photo_1">
-      <a href=""><img src="https://via.placeholder.com/541x564" /></a>
-    </div>
-    <div id="photo_2">
-      <a href=""><img src="https://via.placeholder.com/541x564" /></a>
-    </div>
-  </div>
-</div>
-<div id="galerie">
-  <h2 class="gros-titre">Galerie</h2>
-  <div id="galerie-photos">
-    <div id="un">
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-    </div>
-    <div id="deux">
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-    </div>
-    <div id="trois">
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-    </div>
-    <div id="quatre">
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-      <a href=""><img src="https://via.placeholder.com/250" /></a>
-    </div>
   </div>
 </div>

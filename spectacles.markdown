@@ -1,42 +1,7 @@
 ---
 title: Spectacles - Cie J't'embrasse
 position: 5
-layout: default
+layout: spectacles
 custom_css: spectacles
 custom_js: spectacles
 ---
-
-<div id="titre">
-  <h1>SPECTACLES</h1>
-</div>
-<div id="spectacles">
-  <div id="contenu">
-    <section class="splide" aria-label="Les spectacles">
-      <div class="splide__track">
-        <div class="splide__list">
-          {% for spectacle in site.spectacles %}
-          <div class="une-carte splide__slide">
-            <div class="photo-spectacles">
-              <a href="{{ spectacle.url }}"
-                ><img src="{{ spectacle.image }}"
-              /></a>
-            </div>
-            <div class="texte-spectacles">
-              <p>
-                <span class="gras">{{spectacle.title}}</span> <br />
-                {{spectacle.lieu}} <br />
-                {{spectacle.date-spectacle}}
-              </p>
-            </div>
-            <div class="container-btn-reserver">
-              <a href="{{ spectacle.lien-reservation }}"
-                ><button class="btn-reserver"><span>Réserver</span></button></a
-              >
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </section>
-  </div>
-</div>

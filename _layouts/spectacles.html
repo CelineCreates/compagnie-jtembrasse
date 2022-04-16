@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div id="titre">
+  <h1>SPECTACLES</h1>
+</div>
+<div id="spectacles">
+  <div id="contenu">
+    <section class="splide" aria-label="Les spectacles">
+      <div class="splide__arrows">
+        <button class="splide__arrow splide__arrow--prev">
+          <img
+            id="suivant"
+            src="assets/images/fiches/triangle-fiche.png"
+            alt=""
+            style="
+              transform: rotate(180deg);
+              right: 100px;
+              position: absolute;
+              max-width: unset;
+            "
+          />
+        </button>
+        <button class="splide__arrow splide__arrow--next">
+          <img
+            id="suivant"
+            src="assets/images/fiches/triangle-fiche.png"
+            alt=""
+            style="left: 100px; position: absolute; max-width: unset"
+          />
+        </button>
+      </div>
+      <div class="splide__track">
+        <div class="splide__list">
+          {% for spectacle in site.spectacles %}
+          <div class="une-carte splide__slide">
+            <div class="photo-spectacles">
+              <a href="{{ spectacle.url }}"
+                ><img src="{{ spectacle.image }}"
+              /></a>
+            </div>
+            <div class="texte-spectacles">
+              <p>
+                <span class="gras">{{spectacle.title}}</span> <br />
+                {{spectacle.lieu}} <br />
+                {{spectacle.date-spectacle}}
+              </p>
+            </div>
+            <div class="container-btn-reserver">
+              <a href="{{ spectacle.lien-reservation }}"
+                ><button class="btn-reserver"><span>Réserver</span></button></a
+              >
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

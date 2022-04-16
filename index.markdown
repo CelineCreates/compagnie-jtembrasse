@@ -3,7 +3,7 @@ title: Accueil - Cie J't'embrasse
 position: 0
 custom_css: index
 custom_js: accueil
-image-accueil: "/uploads/wallhaven-721k2y.jpeg"
+image-accueil: "assets/images/index/affiche-accueil.png"
 layout: accueil
 ---
 

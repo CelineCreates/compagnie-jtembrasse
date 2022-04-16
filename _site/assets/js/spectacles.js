@@ -8,6 +8,7 @@ jQuery(function () {
     rewind: true,
     rewindByDrag: true,
     gap: "100px",
+    arrows: { prev: "#precedent", next: "#suivant" },
   });
   splide.mount();
 });

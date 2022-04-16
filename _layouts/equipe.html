@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+{{content}}
+
+<div id="photo-equipe">
+  <h2 class="gros-titre">Présentation de l'équipe</h2>
+  <div id="photo">
+    <div id="photo_1">
+      <a href=""><img src="{{page.photo_presentation_1}}" /></a>
+    </div>
+    <div id="photo_2">
+      <a href=""><img src="{{page.photo_presentation_2}}" /></a>
+    </div>
+  </div>
+</div>
+<div id="galerie">
+  <h2 class="gros-titre">Galerie</h2>
+  <div
+    id="nanogallery2"
+    data-nanogallery2='{
+                        "thumbnailHeight":  150,
+                        "thumbnailWidth":   150,
+                        "itemsBaseURL":     {{site.url}}
+                      }'
+  >
+    <!-- gallery content -->
+    {% for image in site.photo_gallery %}
+    <a
+      href="{{site.url}}/{{ image.image_path }}"
+      data-ngThumb="{{ image.image_path }}"
+    >
+      {{ image.title}}
+    </a>
+    {% endfor %}
+    <!-- ### end of the gallery definition ### -->
+  </div>
+</div>
