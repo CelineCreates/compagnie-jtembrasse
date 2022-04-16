@@ -2,8 +2,8 @@
 title: TU DORS
 lieu: ST ETIENNE
 date-spectacle: 22 & 25 mars
-lien-reservation: "https://www.google.fr"
-lien-fiche: "https://www.google.fr"
+lien-reservation: https://www.google.fr
+lien-fiche: https://www.google.fr
 image: https://via.placeholder.com/314x445
 ---
 

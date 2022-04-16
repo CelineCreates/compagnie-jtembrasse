@@ -2,7 +2,7 @@
 title: TU RÊVES
 lieu: Perreux-sur-Marne
 date-spectacle: 11 & 12 mars
-lien-reservation: "https://www.google.fr"
+lien-reservation: https://www.google.fr
 image: https://via.placeholder.com/314x445
 ---
 

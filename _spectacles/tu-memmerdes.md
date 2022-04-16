@@ -2,7 +2,7 @@
 title: TU M'EMMERDES
 lieu: LYON
 date-spectacle: 1 & 26 Avril
-lien-reservation: "https://www.google.fr"
+lien-reservation: https://www.google.fr
 image: https://via.placeholder.com/314x445
 ---
 
