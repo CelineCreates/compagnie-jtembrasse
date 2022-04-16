@@ -1,0 +1,23 @@
+body { width: 98vw; height: 98vh; display: flex; }
+
+img { max-width: 100%; height: auto; }
+
+#label-menu { display: flex; }
+
+#texte-un { width: fit-content; }
+
+#texte-deux { width: fit-content; }
+
+#container-nav { width: 100%; position: inherit; height: max-content; text-align: end; }
+
+#burger { display: none; }
+
+#menu { display: flex; justify-content: end; }
+
+footer { width: 100%; display: flex; justify-content: space-between; margin-top: 50px; background-color: none; }
+
+#texte-footer { display: flex; width: 90%; flex-direction: column; align-items: center; }
+
+@media all and (max-width: 991px) { footer { width: 100%; display: flex; justify-content: space-between; margin-top: 5%; text-align: center; } #texte-footer { display: flex; width: 70%; flex-direction: column; align-items: center; padding: 2%; } #reseaux { display: flex; align-items: center; } #label-menu, #toggle { display: none; } header { height: 50px; background-color: none; } nav { height: fit-content; display: flex; justify-content: flex-end; margin-right: 20px; flex-direction: column; } nav #menu { display: flex; width: 50%; align-self: end; flex-direction: column; height: fit-content; text-align: center; position: relative; } nav #menu a { width: 50%; } #label-menu { width: 30px; display: flex; font-size: 40px; color: #f2977d; cursor: pointer; float: right; } #burger { width: 100%; height: fit-content; display: block; } #toggle:checked ~ #menu { display: flex; position: relative; } #toggle:not(:checked) ~ #menu { display: none; } }
+
+/*# sourceMappingURL=global.css.map */
