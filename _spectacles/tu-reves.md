@@ -4,6 +4,7 @@ lieu: Perreux-sur-Marne
 date-spectacle: 11 & 12 mars
 lien-reservation: https://www.google.fr
 image: https://via.placeholder.com/314x445
+nature: fiche
 ---
 
 <div id="tout">

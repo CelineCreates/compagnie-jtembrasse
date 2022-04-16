@@ -1,0 +1,6 @@
+<script src="{{ base.url | prepend: site.url }}/assets/js/global.js"></script>
+{% if page.custom_js %} {% for jsfile in page.custom_js %}
+<script src="{{ base.url | prepend: site.url }}/assets/js/{{ jsfile }}.js"></script>
+{% endfor %} {% endif %} {% if page.nature == "fiche" %}
+<script src="{{ base.url | prepend: site.url }}/assets/js/fiches.js"></script>
+{% endif %}

@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>CIE J't'embrasse</title>
-    <meta name="author" content="CelineCreates" />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/global.css">
-    {% if page.custom_css %}
-    {% for stylesheet in page.custom_css %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ stylesheet }}.css">
-    {% endfor %}
-  {% endif %}
-    <script
-      src="{{ base.url | prepend: site.url }}/assets/js/libraries/jquery/jquery-3.6.0.min.js"
-    ></script>
-<script src="{{ site.baseurl }}/assets/js/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/js/libraries/splide-4.0.1/dist/css/splide.min.css">
-  </head>
-
+   {% include header.html %}
   <body>
       <div id="content">
           <header>
@@ -32,19 +13,7 @@
 </header>
      {{ content }}
   </body>
-  <footer>
-    <div id="texte-footer">
-      {% include texte-footer.html %}
-    </div>
-    <div id="reseaux">
-      {% include social-media-links.html %}
-    </div>
-  </footer>
+   {% include footer.html %}
   </div>
-  <script src="{{ base.url | prepend: site.url }}/assets/js/global.js"></script>
-  {% if page.custom_js %}
-    {% for jsfile in page.custom_js %}
-    <script src="{{ base.url | prepend: site.url }}/assets/js/{{ jsfile }}.js"></script>
-    {% endfor %}
-  {% endif %}
+  {% include scripts.html %}
 </html>

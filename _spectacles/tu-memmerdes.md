@@ -4,6 +4,7 @@ lieu: LYON
 date-spectacle: 1 & 26 Avril
 lien-reservation: https://www.google.fr
 image: https://via.placeholder.com/314x445
+nature: fiche
 ---
 
 <div id="tout">
