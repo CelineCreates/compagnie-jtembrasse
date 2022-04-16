@@ -5,3 +5,4 @@ custom_css: index
 custom_js: accueil
 image-accueil: assets/images/index/affiche-accueil.png
 ---
+
