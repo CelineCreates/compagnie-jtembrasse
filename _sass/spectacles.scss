@@ -139,6 +139,10 @@ header {
   max-width: fit-content !important;
 }
 
+.splide__arrow {
+  width: 0 !important ;
+}
+
 @media all and (max-width: 990px) {
   #content {
     width: 100%;

@@ -14,13 +14,16 @@ collections:
   uploads:
     title: Uploads
     output: true
+  photo_spectacles:
+    title: Photos Spectacles
+    output: true
 defaults:
-- scope:
-    path: ''
-    type: spectacles
-  values:
-    layout: fiche
-- scope:
-    path: ''
-  values:
-    layout: default
+  - scope:
+      path: ""
+      type: spectacles
+    values:
+      layout: fiche
+  - scope:
+      path: ""
+    values:
+      layout: default

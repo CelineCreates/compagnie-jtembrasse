@@ -1,0 +1,34 @@
+---
+layout: default
+custom_css: formations
+custom_js: formations
+---
+
+<div id="prestation-titre">
+  <div id="titre">
+    <h2 class="gros-titre">PRESTATIONS SUR-MESURE</h2>
+    <p>{{page.phrase_accroche | markdownify}}</p>
+  </div>
+  <div id="images">
+    <a href=""><img src="{{page.image1}}" /></a>
+    <a href=""><img src="{{page.image2}}" /></a>
+    <a href=""><img src="{{page.image3}}" /></a>
+    <a href=""><img src="{{page.image4}}" /></a>
+  </div>
+  <div id="texte-prestation">
+    <p>{{page.texte_prestation | markdownify}}</p>
+  </div>
+  <div id="inscrire">
+    <button class="btn-reserver">
+      <span>S'inscrire</span>
+    </button>
+  </div>
+  <div id="textes-prestation">
+    <div id="details">
+      <p>{{page.texte_details | markdownify}}</p>
+      <div id="part-deux">
+        <p>{{page.contact | markdownify}}</p>
+      </div>
+    </div>
+  </div>
+</div>

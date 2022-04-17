@@ -20,9 +20,9 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #fiche { overflow: auto; display: flex; width: 100%; padding-bottom: 20px; border-radius: 41px; gap: 50px; }
 
-#images-min { display: flex; width: 100%; flex-direction: column; align-items: center; gap: 10px; }
+#images-min { margin-left: 40px; display: flex; max-width: 100%; flex-direction: column; align-items: center; gap: 10px; height: 100%; }
 
-#image-max { display: flex; width: 100%; }
+#image-max { margin-left: 20px; justify-content: center; align-items: center; display: flex; width: 100%; }
 
 #textes-fiche { display: flex; width: 100%; flex-direction: column; margin-right: 80px; margin-left: 20px; overflow: auto; }
 
@@ -62,7 +62,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #fiche { background-color: rgba(22, 22, 22, 0.05); }
 
-#box { display: flex; width: 100%; justify-content: center; padding-top: 20px; }
+#box { align-items: center; display: flex; width: 100%; justify-content: center; padding-top: 20px; }
 
 #pratique { display: flex; justify-content: center; margin-top: 40px; }
 

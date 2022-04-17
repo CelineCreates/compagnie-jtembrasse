@@ -43,6 +43,8 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 .une-carte { text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: fit-content; max-width: fit-content !important; width: fit-content; max-width: fit-content !important; }
 
+.splide__arrow { width: 0 !important; }
+
 @media all and (max-width: 990px) { #content { width: 100%; height: 100%; padding-left: 0%; padding-right: 0%; } #titre { width: 100%; display: flex; justify-content: center; margin-top: 35px; margin-bottom: 15px; } #spectacles { width: 100%; height: 100%; border: none; border-radius: 52px; } #contenu { height: auto; display: flex; width: 100%; align-items: center; flex-direction: column; overflow: auto; } .une-carte { margin-bottom: 2%; margin-right: inherit; width: 700px; } #reseaux { display: flex; align-items: center; } header { margin-bottom: 125px; } }
 
 /*# sourceMappingURL=spectacles.css.map */

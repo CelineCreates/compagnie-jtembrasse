@@ -2,6 +2,8 @@ body { width: 98vw; height: 98vh; display: flex; }
 
 img { max-width: 100%; height: auto; }
 
+a, button { cursor: pointer; }
+
 #label-menu { display: flex; }
 
 #texte-un { width: fit-content; }
