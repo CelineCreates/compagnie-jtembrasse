@@ -1,15 +1,49 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+{% include header.html %}
 
-<div id="main-content">
+
+<div id="container-logo">
+  <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
+</div>
+<div id="content">
   <div id="photo-accueil">
     <img src="{{page.image-accueil}}" />
   </div>
-  <div id="content-accueil">
-    <div id="texte-accueil">
-      {{content}}
-      <button class="btn-reserver"><span>Réserver</span></button>
+
+  <div id="core-content">
+    <header>
+      <div id="container-nav">
+        <nav>
+          <div id="burger">
+            <label id="label-menu" for="toggle">☰</label>
+            <input type="checkbox" id="toggle">
+          </div>
+
+          <ol id="menu">
+            {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name }}
+              </a></li>
+            {% endfor %}
+          </ol>
+        </nav>
+
+      </div>
+    </header>
+    <div id="main-content">
+
+      <div id="content-accueil">
+        <div id="texte-accueil">
+          {{content}}
+          <button class="btn-reserver"><span>Réserver</span></button>
+        </div>
+      </div>
     </div>
   </div>
+
 </div>
+{% include footer.html %}
+{% include scripts.html %}
+
+</html>

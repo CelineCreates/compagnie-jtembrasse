@@ -4,6 +4,8 @@ img { max-width: 100%; height: auto; }
 
 a, button { cursor: pointer; }
 
+button { all: unset; cursor: pointer; }
+
 #label-menu { display: flex; }
 
 #texte-un { width: fit-content; }
@@ -16,7 +18,9 @@ a, button { cursor: pointer; }
 
 #menu { display: flex; justify-content: end; }
 
-footer { width: 100%; display: flex; justify-content: space-between; margin-top: 50px; background-color: none; }
+footer { align-items: center; text-align: center; justify-content: center; width: 100%; display: flex; justify-content: space-between; margin-top: 50px; background-color: none; height: auto; min-height: 50px; border-top: solid gray; }
+
+#social-media { display: flex; align-items: baseline; }
 
 #texte-footer { display: flex; width: 90%; flex-direction: column; align-items: center; }
 
