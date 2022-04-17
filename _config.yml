@@ -8,9 +8,6 @@ collections:
   photo_spectacles:
     title: Photos Spectacles
     output: true
-  posts:
-    title: Posts
-    output: true
   spectacles:
     title: Spectacles
     output: true
@@ -18,12 +15,12 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: ''
-    type: spectacles
-  values:
-    layout: fiche
-- scope:
-    path: ''
-  values:
-    layout: default
+  - scope:
+      path: ""
+      type: spectacles
+    values:
+      layout: fiche
+  - scope:
+      path: ""
+    values:
+      layout: default
