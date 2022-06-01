@@ -10,13 +10,11 @@
 
 .blue { background-color: blue; }
 
-#container-logo { width: 139px; }
-
 header { width: 100%; display: flex; width: min-content; }
 
 #container-nav { width: min-content; }
 
-body { flex-direction: column; max-height: 100vh !important; }
+body { flex-direction: column; }
 
 #content { display: flex; height: auto; }
 
@@ -56,16 +54,20 @@ footer { width: 100%; display: flex; justify-content: space-between; margin-top:
 
 #photo-accueil > img { height: auto; width: -webkit-fill-available; margin-left: 20px; }
 
-#container-logo { margin-top: 20px; margin-left: 10px; position: absolute; left: 10px; }
+#container-logo { position: absolute; display: flex; width: 100%; justify-content: space-between; }
 
-.btn-reserver { width: 149px; height: 47px; border-radius: 20px; background-color: #f2977d; border: transparent; margin-top: 31px; }
+header { margin-right: 6%; }
+
+.btn-reserver { text-align: center; width: 149px; height: 47px; border-radius: 20px; background-color: #f2977d; border: transparent; margin-top: 31px; }
 
 .btn-reserver > span { padding: 10px; color: white; font-weight: 400; font-size: 24px; }
 
 #reseaux { right: 10px; position: absolute; }
 
-@media (max-width: 1725px) { #texte-accueil { padding-right: 0; } }
+#image-texte-accueil { display: none; }
 
-@media all and (max-width: 990px) { #main-content { flex-direction: column; overflow: scroll; } #texte-accueil { width: fit-content; padding-left: 50px; padding-right: 50px; margin-top: 200px; } #content-accueil { width: 100%; } #content { padding-right: 0%; padding-left: 0%; } }
+@media (max-width: 1450px) { #menu a:link, #menu a:visited { color: black; } #texte-accueil { padding-left: 50px; padding-right: 50px; margin-top: 30px; } #container-nav { width: min-content; display: none; } }
+
+@media (max-width: 950px) { #container-logo { position: relative; width: calc(100% - 20px); display: flex; } #content { padding-left: 0; flex-direction: column; width: 100%; height: auto; max-height: none; } #photo-accueil { width: 100%; max-width: none; } #photo-accueil > img { margin-left: 0; display: none; } #footer { position: relative; } #core-content { max-width: none; width: 100%; } #reseaux { position: relative; } #texte-accueil { margin-bottom: 15px; } #image-texte-accueil { display: block; } #content-accueil { display: flex; } body { max-height: unset; } }
 
 /*# sourceMappingURL=index.css.map */

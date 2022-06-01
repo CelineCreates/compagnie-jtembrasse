@@ -5,21 +5,14 @@
 
 <div id="container-logo">
   <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
-</div>
-<div id="content">
-  <div id="photo-accueil">
-    <img src="{{page.image-accueil}}" />
+  <div id="menu-button">
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
   </div>
-
-  <div id="core-content">
-    <header>
+ <header>
       <div id="container-nav">
         <nav>
-          <div id="burger">
-            <label id="label-menu" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-          </div>
-
           <ol id="menu">
             {% for item in site.data.navigation %}
             <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
@@ -31,12 +24,24 @@
 
       </div>
     </header>
+
+</div>
+<div id="content">
+  <div id="photo-accueil">
+    <img src="{{page.image-accueil}}" />
+  </div>
+
+  <div id="core-content">
+   
     <div id="main-content">
 
       <div id="content-accueil">
         <div id="texte-accueil">
           {{content}}
           <button class="btn-reserver"><span>Réserver</span></button>
+        </div>
+        <div id="image-texte-accueil">
+           <img src="{{page.image-accueil}}" />
         </div>
       </div>
     </div>

@@ -1,4 +1,9 @@
 body {
+  // min-width: 667px !important;
+  // min-height: 375px !important;
+}
+
+body {
   width: 98vw;
   height: 98vh;
   display: flex;
@@ -11,7 +16,9 @@ a,
 button {
   cursor: pointer;
 }
-
+a {
+  text-decoration: none;
+}
 button {
   all: unset;
   cursor: pointer;
@@ -68,81 +75,123 @@ footer {
   align-items: center;
 }
 
-@media all and (max-width: 991px) {
-  footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5%;
-    text-align: center;
+.menu-button-bar {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#menu-button {
+  right: 0;
+  position: fixed;
+  margin-right: 15px;
+  display: none;
+}
+
+// @media all and (max-width: 1315px) {
+//   footer {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 5%;
+//     text-align: center;
+//   }
+//   #texte-footer {
+//     display: flex;
+//     width: 70%;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 2%;
+//   }
+//   #reseaux {
+//     display: flex;
+//     align-items: center;
+//   }
+//   // --------------------MENU-------------------
+//   #label-menu,
+//   #toggle {
+//     display: none;
+//   }
+//   header {
+//     height: 50px;
+//     background-color: none;
+//   }
+
+//   nav {
+//     height: fit-content;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-right: 20px;
+//     flex-direction: column;
+//   }
+
+//   nav #menu {
+//     display: flex;
+//     // background-color: black;
+//     width: 50%;
+//     align-self: end;
+//     // display: none;
+//     flex-direction: column;
+//     // background: none;
+//     height: fit-content;
+//     // width: 100%;
+//     text-align: center;
+//     position: relative;
+//   }
+
+//   nav #menu a {
+//     width: 50%;
+//   }
+
+//   #label-menu {
+//     width: 30px;
+//     display: flex;
+//     font-size: 40px;
+//     color: #f2977d;
+//     cursor: pointer;
+//     float: right;
+//   }
+
+//   #burger {
+//     width: 100%;
+//     height: fit-content;
+//     display: block;
+//   }
+
+//   #toggle:checked ~ #menu {
+//     display: flex;
+//     position: relative;
+//   }
+//   #toggle:not(:checked) ~ #menu {
+//     display: none;
+//   }
+
+@media (max-width: 1450px) {
+  #menu-button {
+    display: initial;
   }
-  #texte-footer {
+
+  #menu {
     display: flex;
-    width: 70%;
+    position: fixed;
+    right: 0;
     flex-direction: column;
-    align-items: center;
-    padding: 2%;
+    background-color: #f2977d;
+    height: 100%;
+    text-align: end;
+    justify-content: flex-start;
+    margin: unset;
+    z-index: 10;
   }
-  #reseaux {
-    display: flex;
-    align-items: center;
-  }
-  // --------------------MENU-------------------
-  #label-menu,
-  #toggle {
+  #container-nav {
     display: none;
   }
-  header {
-    height: 50px;
-    background-color: none;
-  }
-
-  nav {
-    height: fit-content;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    flex-direction: column;
-  }
-
-  nav #menu {
-    display: flex;
-    // background-color: black;
-    width: 50%;
-    align-self: end;
-    // display: none;
-    flex-direction: column;
-    // background: none;
-    height: fit-content;
-    // width: 100%;
-    text-align: center;
-    position: relative;
-  }
-
-  nav #menu a {
-    width: 50%;
-  }
-
-  #label-menu {
-    width: 30px;
-    display: flex;
-    font-size: 40px;
-    color: #f2977d;
-    cursor: pointer;
-    float: right;
-  }
-
-  #burger {
-    width: 100%;
-    height: fit-content;
-    display: block;
-  }
-
-  #toggle:checked ~ #menu {
-    display: flex;
-    position: relative;
-  }
-  #toggle:not(:checked) ~ #menu {
-    display: none;
+  #menu a:link,
+  #menu a:visited {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 24px;
   }
 }
