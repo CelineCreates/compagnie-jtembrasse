@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-{% include header.html %}
+  {% include header.html %}
 
+  <div id="container-logo">
+    <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
+    <header>
+      <nav id="main-menu">
+        <ol id="menu">
+           {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name }}
+              </a></li>
+            {% endfor %}
+        </ol>
+      </nav>
 
-<div id="container-logo">
-  <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
-  <div id="menu-button">
-    <div class="menu-button-bar"></div>
-    <div class="menu-button-bar"></div>
-    <div class="menu-button-bar"></div>
-  </div>
- <header>
-      <div id="container-nav">
-        <nav>
-          <ol id="menu">
-            {% for item in site.data.navigation %}
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>Menu</h3>
+          <ol>
+             {% for item in site.data.navigation %}
             <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name }}
               </a></li>
             {% endfor %}
           </ol>
         </nav>
+      </label>
 
-      </div>
+     
     </header>
-
-</div>
-<div id="content">
-  <div id="photo-accueil">
-    <img src="{{page.image-accueil}}" />
   </div>
+  <div id="content">
+    <div id="photo-accueil">
+      <img src="{{page.image-accueil}}" />
+    </div>
 
-  <div id="core-content">
-   
-    <div id="main-content">
-
-      <div id="content-accueil">
-        <div id="texte-accueil">
-          {{content}}
-          <button class="btn-reserver"><span>Réserver</span></button>
-        </div>
-        <div id="image-texte-accueil">
-           <img src="{{page.image-accueil}}" />
+    <div id="core-content">
+      <div id="main-content">
+        <div id="content-accueil">
+          <div id="texte-accueil">
+            {{content}}
+            <button class="btn-reserver"><span>Réserver</span></button>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
-
-</div>
-{% include footer.html %}
-{% include scripts.html %}
-
+  {% include footer.html %} {% include scripts.html %}
 </html>

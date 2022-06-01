@@ -4,8 +4,8 @@ body {
 }
 
 body {
-  width: 98vw;
-  height: 98vh;
+  width: 99vw;
+  height: 89vh;
   display: flex;
 }
 img {
@@ -170,28 +170,5 @@ footer {
 @media (max-width: 1450px) {
   #menu-button {
     display: initial;
-  }
-
-  #menu {
-    display: flex;
-    position: fixed;
-    right: 0;
-    flex-direction: column;
-    background-color: #f2977d;
-    height: 100%;
-    text-align: end;
-    justify-content: flex-start;
-    margin: unset;
-    z-index: 10;
-  }
-  #container-nav {
-    display: none;
-  }
-  #menu a:link,
-  #menu a:visited {
-    text-decoration: none;
-    color: black;
-    font-weight: 300;
-    font-size: 24px;
   }
 }
