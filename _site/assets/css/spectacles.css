@@ -10,7 +10,7 @@
 
 #menu li:last-child { padding-left: 15px; padding-right: 15px; }
 
-#container-logo { width: 139px; }
+#container-logo { width: 139px; margin-top: 15px; margin-left: 85px; }
 
 #container-nav { width: content; }
 
@@ -19,13 +19,15 @@
 header { width: 100%; display: flex; justify-content: space-between; }
 
 /* Css pour les spectacles **/
-#spectacles { width: 100%; height: min-content; border-radius: 20px; border: solid; border-color: #f2977d; border-radius: 52px; display: flex; align-items: center; }
+#spectacles { width: 100%; display: flex; justify-content: center; }
 
-#titre { width: 100%; display: flex; justify-content: end; margin-top: -35px; margin-bottom: 15px; }
+#titre { width: 94%; display: flex; justify-content: end; margin-top: -35px; margin-bottom: 15px; }
 
 #titre > h1 { margin-top: auto; margin-bottom: auto; }
 
-#contenu { margin-bottom: 5px; text-align: center; display: flex; width: 100%; align-items: center; margin-top: 5px; justify-content: center; }
+#contenu { margin-bottom: 5px; text-align: center; margin-top: 5px; justify-content: center; width: 90%; height: min-content; border: solid; border-color: #f2977d; border-radius: 52px; display: flex; align-items: center; }
+
+section#splide01 { margin-top: 30px; margin-bottom: 30px; }
 
 .texte-spectacles { display: flex; justify-content: center; }
 
