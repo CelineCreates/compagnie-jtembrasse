@@ -10,6 +10,20 @@ jQuery(function () {
     autoHeight: true,
     autoWidth: true,
     perPage: 2,
+    breakpoints: {
+      1385: {
+        type: "slide",
+        direction: "",
+        heightRatio: "",
+        type: "",
+        direction: "",
+        height: "",
+        focus: "",
+        autoHeight: "",
+        autoWidth: "",
+        perPage: "",
+      },
+    },
     rewind: true,
     rewindByDrag: true,
   });

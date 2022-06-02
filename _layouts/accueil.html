@@ -3,7 +3,7 @@
   {% include header.html %}
 
   <div id="container-logo">
-    <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
+    <a id="main-logo" href="/"><img src="/assets/images/logo/Logo.png" /></a>
     <header>
       <nav id="main-menu">
         <ol id="menu">
@@ -40,7 +40,9 @@
     <div id="core-content">
       <div id="main-content">
         <div id="content-accueil">
+          <img id="image-background-text" src="{{page.image-accueil}}" />
           <div id="texte-accueil">
+            
             {{content}}
             <button class="btn-reserver"><span>Réserver</span></button>
           </div>

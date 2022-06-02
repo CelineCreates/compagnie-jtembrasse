@@ -1,6 +1,6 @@
 * { font-family: "Lato", sans-serif; }
 
-#content { width: 100%; height: 100%; padding-right: 200px; }
+#content { width: 100%; height: 100%; padding-right: 200px; padding-left: 200px; }
 
 #menu li { display: inline; }
 
@@ -15,8 +15,6 @@
 #container-nav { width: content; }
 
 header { width: 100%; display: flex; justify-content: space-between; }
-
-#content { padding-left: 150px; }
 
 .gros-titre { font-size: 40px; font-weight: 900; text-transform: uppercase; text-align: center; }
 
