@@ -7,7 +7,7 @@ custom_js: formations
 <div id="prestation-titre">
   <div id="titre">
     <h2 class="gros-titre">PRESTATIONS SUR-MESURE</h2>
-    <p>{{page.phrase_accroche | markdownify}}</p>
+    <p class="phrase-accroche">{{page.phrase_accroche}}</p>
   </div>
   <div id="images">
     <img src="/assets/images/formations/formations.png" />
@@ -25,9 +25,29 @@ custom_js: formations
   </div>
   <div id="textes-prestation">
     <div id="details">
-      <p>{{page.texte_details | markdownify}}</p>
+      <p></p>
+       {{page.texte_details | markdownify}}
+      </p>
       <div id="part-deux">
-        <p>{{page.contact | markdownify}}</p>
+        <div class="information">
+          <img
+            class="fleche-droite"
+            src="/assets/images/footer/top.png"
+          />
+ <span class="info-contact">
+          {{page.email}}
+        </span>
+        </div>
+       
+     
+      <div class="information">
+        <img
+            class="fleche-droite"
+            src="/assets/images/footer/top.png"
+          /> <span class="info-contact">
+          {{page.tel}}
+        </span></div>
+       
       </div>
     </div>
   </div>

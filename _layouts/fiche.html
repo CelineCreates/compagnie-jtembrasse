@@ -9,6 +9,22 @@ custom_js: fiches
 </div>
 <div id="tout">
   <div id="fiche">
+    <div id="image-affiche">
+      <div id="image-max">
+        <a href=""><img src="{{page.image}}" /></a>
+      </div>
+      <div class="titre_button">
+        <div id="clic">
+          <a href="{{page.lien-reservation}}"
+            ><button class="btn-reserver">
+              <span>En savoir plus</span>
+            </button></a
+          >
+        </div>
+        <h1 class="titre-fiche">{{page.title}}</h1>
+      </div>
+    </div>
+    <div id="textes-fiche">{{ page.presentation | markdownify }}</div>
     <div id="box">
       <div id="images-min">
         <div class="splide" role="group" aria-label="photos spectacle">
@@ -25,18 +41,6 @@ custom_js: fiches
           </div>
         </div>
       </div>
-      <div id="image-max">
-        <a href=""><img src="{{page.image}}" /></a>
-      </div>
-    </div>
-    <div id="textes-fiche">
-      <h1>{{page.title}}</h1>
-      {{ page.presentation | markdownify }}
-    </div>
-    <div id="clic">
-      <a href="{{page.lien-reservation}}"
-        ><button class="btn-reserver"><span>Réserver</span></button></a
-      >
     </div>
   </div>
 </div>

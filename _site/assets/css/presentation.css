@@ -1,6 +1,6 @@
 * { font-family: "Lato", sans-serif; }
 
-#content { width: 100%; height: 100%; padding-right: 200px; }
+#content { width: 100%; height: 100%; display: flex; flex-direction: column; }
 
 #menu li { display: inline; }
 
@@ -16,13 +16,11 @@
 
 header { width: 100%; display: flex; justify-content: space-between; }
 
-#content { padding-left: 150px; }
-
 #photo-equipe { margin-top: -70px; }
 
 .gros-titre { font-size: 40px; font-weight: 900; text-transform: uppercase; text-align: center; }
 
-#photo { width: 100%; border-radius: 41px; padding-top: 30px; padding-bottom: 30px; display: flex; flex-direction: column; align-items: center; }
+#photo { width: 80%; border-radius: 41px; padding-top: 30px; padding-bottom: 30px; display: flex; flex-direction: column; align-items: center; align-self: center; }
 
 #photo { background-color: rgba(22, 22, 22, 0.05); }
 
@@ -43,6 +41,14 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #metier { font-size: 30px; font-weight: 200; }
 
-@media all and (max-width: 990px) { header { margin-bottom: 200px; } #top { flex-direction: column; } #content { padding-left: 0%; padding-right: 0%; } #photo { padding: 20px; } #contenu > p { margin-left: 10px; margin-right: 10px; } #texte-presentation { width: auto; } }
+.cross-return { display: inline-flex; width: 100%; justify-content: flex-end; }
+
+#cross { display: block; margin-right: 50px; }
+
+#cross > a { font-size: 30px; color: salmon; }
+
+#contenu > div { margin: 20px; }
+
+@media all and (max-width: 990px) { #top { flex-direction: column; } #content { padding-left: 0%; padding-right: 0%; } #photo { padding: 20px; } #contenu > p { margin-left: 10px; margin-right: 10px; } #texte-presentation { width: auto; } #nom { font-size: 37px; } #metier { font-size: 26px; } }
 
 /*# sourceMappingURL=presentation.css.map */

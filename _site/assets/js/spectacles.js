@@ -4,16 +4,17 @@ window.$ = $;
 jQuery(function () {
   var splide = new Splide(".splide", {
     type: "slide",
-    perPage: 2,
+    perPage: 3,
     breakpoints: {
       990: {
         perPage: 1,
-        gap: "",
+        fixedWidth: "100%",
+        fixedHeight: "100%",
       },
     },
     rewind: true,
     rewindByDrag: true,
-    gap: "100px",
+    gap: "15px",
   });
   splide.mount();
 });

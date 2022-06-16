@@ -6,7 +6,11 @@ a, button { cursor: pointer; }
 
 a { text-decoration: none; }
 
-button { all: unset; cursor: pointer; }
+button { all: unset; cursor: pointer; text-align: center !important; }
+
+nav#sidebar-menu { z-index: 999; }
+
+.cache { display: none; }
 
 #label-menu { display: flex; }
 
@@ -14,13 +18,13 @@ button { all: unset; cursor: pointer; }
 
 #texte-deux { width: fit-content; }
 
-#container-nav { width: 100%; position: inherit; height: max-content; text-align: end; }
+#container-nav { width: 100%; position: inherit; text-align: start; }
 
 #burger { display: none; }
 
 #menu { display: flex; justify-content: end; }
 
-footer { align-items: center; text-align: center; justify-content: center; width: 100%; display: flex; justify-content: space-between; background-color: none; height: auto; min-height: 50px; border-top: solid gray; }
+footer { align-items: center; text-align: center; justify-content: center; width: 100%; display: flex; justify-content: space-between; background-color: none; height: auto; min-height: 50px; }
 
 #social-media { display: flex; align-items: baseline; }
 
@@ -38,7 +42,7 @@ footer { align-items: center; text-align: center; justify-content: center; width
 
 #hamburger-input { display: none; }
 
-#hamburger-menu { position: fixed; top: 20px; right: 30px; width: 50px; height: 50px; display: none; border: none; padding: 0px; margin: 0px; font-family: "Cabin", Sans-serif; background: linear-gradient(to bottom, black, black 20%, rgba(255, 0, 0, 0) 20%, rgba(255, 0, 0, 0) 40%, black 40%, black 60%, rgba(255, 0, 0, 0) 60%, rgba(255, 0, 0, 0) 80%, black 80%, black 100%); }
+#hamburger-menu { position: fixed; top: 20px; width: 50px; height: 50px; display: none; border: none; padding: 0px; margin: 0px; font-family: "Cabin", Sans-serif; background: linear-gradient(to bottom, #f2977d, #f2977d 20%, rgba(255, 0, 0, 0) 20%, rgba(255, 0, 0, 0) 40%, #f2977d 40%, #f2977d 60%, rgba(255, 0, 0, 0) 60%, rgba(255, 0, 0, 0) 80%, #f2977d 80%, #f2977d 100%); }
 
 #hamburger-menu #sidebar-menu { visibilty: hidden; position: fixed; top: 0; right: -250px; width: 200px; height: 100%; background-color: #f2977d; transition: 0.3s; padding: 0px 10px; box-sizing: border-box; }
 
@@ -54,6 +58,8 @@ footer { align-items: center; text-align: center; justify-content: center; width
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu { visibility: visible; right: 0; }
 
-@media screen and (max-width: 1300px) { #main-menu { display: none; } #hamburger-menu { display: inline; z-index: 10; } }
+@media screen and (max-width: 1300px) { #main-menu { display: none; } #hamburger-menu { display: block; position: absolute; margin-right: 10px; } #container-nav { display: flex; justify-content: end; } }
+
+@media screen and (max-width: 900px) { footer > #texte-footer > #texte-un { font-size: 10px; } footer > #texte-footer > #texte-deux { font-size: 11px; } body { margin: unset; } #texte-footer { margin: 5px; } #contenu { font-size: 16px !important; } .gros-titre { font-size: 30px !important; } }
 
 /*# sourceMappingURL=global.css.map */

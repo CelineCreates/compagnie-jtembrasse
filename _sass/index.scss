@@ -212,7 +212,7 @@ header {
   padding: 10px;
   color: white;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 #reseaux {
@@ -275,8 +275,9 @@ header {
   }
 
   #main-logo {
-    -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
-    filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 white);
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+      drop-shadow(-1px -1px 0 #f2977d);
+    filter: drop-shadow(1px 1px #f2977d) drop-shadow(-1px -1px 1px #f2977d);
   }
 }
 @media (max-width: 1300px) {
@@ -318,12 +319,30 @@ header {
 }
 
 @media (max-width: 900px) {
+  .btn-reserver-responsive {
+    display: initial;
+  }
+
+  .btn-reserver-desktop {
+    display: none;
+  }
+
   #image-background-text {
     display: block;
   }
+  #texte-accueil > h1 {
+    font-size: 49px;
+  }
 
+  #texte-accueil > p {
+    font-size: 16px;
+  }
+
+  #texte-accueil > h5 {
+    font-size: 16px;
+  }
   img#image-background-text {
-    opacity: 0.2;
+    // opacity: 0.2;
     margin: auto;
   }
   #container-logo {
@@ -363,14 +382,16 @@ header {
     padding-right: 10px;
     position: absolute;
     overflow: scroll;
-    height: 100%;
+    height: 50%;
     text-align: center;
+    background: rgba(211, 211, 211, 0.8);
   }
 
   #image-texte-accueil {
     display: block;
   }
   #content-accueil {
+    align-items: end;
     display: flex;
   }
 

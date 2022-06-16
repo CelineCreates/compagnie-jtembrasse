@@ -65,7 +65,7 @@ header {
 }
 
 #images-min {
-  margin-left: 40px;
+  // margin-left: 40px;
   display: flex;
   // width: 100%;
   max-width: 100%;
@@ -75,12 +75,18 @@ header {
   height: 100%;
 }
 
+#image-affiche {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
 #image-max {
-  margin-left: 20px;
+  // margin-left: 20px;
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: auto;
 }
 
 #textes-fiche {
@@ -92,12 +98,14 @@ header {
   overflow: auto;
 }
 
-#textes-fiche > h1 {
+.titre-fiche {
   color: #f2977d;
   font-size: 96px;
   font-weight: 900;
   margin-bottom: 0px;
   margin-top: 35px;
+  display: flex;
+  align-self: end;
 }
 
 #textes-fiche > p {
@@ -108,7 +116,7 @@ header {
 }
 
 .btn-reserver {
-  width: 149px;
+  // width: 149px;
   height: 47px;
   border-radius: 20px;
   background-color: #f2977d;
@@ -129,6 +137,8 @@ header {
   // position: absolute;
   right: 300px;
   margin-bottom: 0.5%;
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
 #teaser {
@@ -220,9 +230,15 @@ header {
   margin-top: 40px;
 }
 
+.titre_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media all and (max-width: 1385px) {
   #image-max {
-    display: none;
+    // display: none;
   }
 
   #fiche {
@@ -237,7 +253,8 @@ header {
 
 @media all and (max-width: 1027px) {
   #fiche {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    padding: 20px;
   }
   #box {
     flex-direction: row-reverse;
@@ -254,6 +271,10 @@ header {
   #content {
     padding-left: 0%;
     padding-right: 0%;
+  }
+  #tout {
+    padding-left: 50px;
+    padding-right: 50px;
   }
   #teaser {
     display: flex;

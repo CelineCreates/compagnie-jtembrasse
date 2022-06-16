@@ -5,8 +5,8 @@
 #content {
   width: 100%;
   height: 100%;
-  padding-right: 200px;
-  padding-left: 200px;
+  // padding-right: 200px;
+  // padding-left: 200px;
 }
 
 #menu li {
@@ -127,10 +127,21 @@ header {
   display: flex;
   margin-top: -20px;
   margin-left: 10%;
+  flex-direction: column;
 }
 
 #prestation-titre {
   margin-top: -70px;
+}
+.fleche-droite {
+  transform: rotate(90deg);
+  width: auto;
+  height: 20px;
+}
+
+.information {
+  align-items: center;
+  display: flex;
 }
 
 @media all and (max-width: 990px) {
@@ -160,5 +171,18 @@ header {
 
   header {
     // margin-bottom: 200px;
+  }
+
+  .phrase-accroche {
+    font-size: 17px !important;
+  }
+  #texte-prestation {
+    font-size: 14px !important;
+  }
+  #details > p {
+    font-size: 14px !important;
+  }
+  .info-contact {
+    font-size: 14px !important;
   }
 }

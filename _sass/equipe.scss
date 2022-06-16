@@ -11,12 +11,33 @@ div#resumer {
 #content {
   width: 100%;
   height: 100%;
-  padding-right: 200px;
-  padding-left: 200px;
+  // padding-right: 200px;
+  // padding-left: 200px;
+  display: flex;
+  flex-direction: column;
 }
+
+#presentation,
+#photo-equipe,
+#galerie,
+#resumer {
+  width: 80%;
+  align-self: center;
+}
+
+// #presentation,
+// #photo-equipe,
+// #galerie {
+//   margin-left: 200px;
+//   margin-right: 200px;
+// }
+
 #content {
 }
 
+.nanogallery_gallerytheme_dark_nanogallery2 .nGY2GThumbnail_l1 {
+  border-radius: 10px !important;
+}
 #menu li {
   display: inline;
 }
@@ -42,6 +63,8 @@ div#resumer {
 
 #container-logo {
   width: 139px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 #container-nav {
@@ -62,7 +85,7 @@ header {
 
 #presentation {
   display: flex;
-  width: 100%;
+  // width: 100%;
   margin-top: -50px;
   background-color: rgba(22, 22, 22, 0.05);
   border-radius: 41px;
@@ -78,8 +101,8 @@ header {
   flex-direction: column;
   width: 100%;
   text-align: justify;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #presentation-content > p {
@@ -93,6 +116,7 @@ header {
   font-weight: 900;
   text-align: center;
   color: black;
+  margin-top: 37px;
 }
 
 .gros-titre {
@@ -105,6 +129,9 @@ header {
   line-height: 35px;
   font-size: 20px;
   text-align: center;
+}
+#resumer-content > P {
+  font-style: italic;
 }
 
 .gras {
@@ -148,7 +175,8 @@ header {
     text-align: center;
   }
   #resumer-content > p {
-    text-align: justify;
+    // text-align: justify;
+    font-style: italic;
   }
   #photo {
     flex-direction: column;
@@ -162,5 +190,16 @@ header {
   }
   #photo_1 {
     margin-right: 0;
+  }
+  p {
+    font-size: 14px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  #presentation-content > h2 {
+    margin-top: 37px;
   }
 }
