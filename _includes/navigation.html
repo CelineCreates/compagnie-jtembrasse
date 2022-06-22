@@ -1,17 +1,28 @@
 
     <div id="container-nav">
-        <nav>
-            	<div id="burger">
-<label id="label-menu" for="toggle">☰</label>
-    <input type="checkbox" id="toggle">
-                </div>
+        
+            	<nav id="main-menu">
+        <ol id="menu">
+           {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name }}
+              </a></li>
+            {% endfor %}
+        </ol>
+      </nav>
 
-            <ol id="menu">
-                {% for item in site.data.navigation %}
-                <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
-      {{ item.name }}
-    </a></li>
-                {% endfor %}
-            </ol>
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>X</h3>
+          <ol>
+             {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name }}
+              </a></li>
+            {% endfor %}
+          </ol>
+        </nav>
+      </label>
         </nav>
     </div>

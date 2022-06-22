@@ -1,0 +1,25 @@
+---
+layout: default
+custom_css: presentation
+custom_js: presentation
+---
+
+<h2 class="gros-titre">Présentation de l'équipe</h2>
+
+<div id="photo">
+  <div class="cross-return">
+    <div id="cross"><a href="/equipe.html#photo-equipe">X</a></div>
+  </div>
+  <div id="top">
+    <div id="tete">
+      <img src="{{page.image}}" />
+    </div>
+    <div id="texte-presentation">
+      <p>
+        <span id="nom">{{page.nom}}</span> <br />
+        <span id="metier"> {{page.metier}}r</span>
+      </p>
+    </div>
+  </div>
+  <div id="contenu">{{content}}</div>
+</div>

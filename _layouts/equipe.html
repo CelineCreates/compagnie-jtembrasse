@@ -4,15 +4,14 @@ layout: default
 
 {{content}}
 
-<div id="photo-equipe">
+<div name="photo-equipe" id="photo-equipe">
   <h2 class="gros-titre">Présentation de l'équipe</h2>
   <div id="photo">
-    <div id="photo_1">
-      <a href=""><img src="{{page.photo_presentation_1}}" /></a>
+    {% for presentation in site.presentations %}
+    <div class="une_photo_equipe">
+      <a href="{{presentation.url}}"><img src="{{presentation.image}}" /></a>
     </div>
-    <div id="photo_2">
-      <a href=""><img src="{{page.photo_presentation_2}}" /></a>
-    </div>
+    {% endfor %}
   </div>
 </div>
 <div id="galerie">

@@ -1,6 +1,6 @@
 * { font-family: "Lato", sans-serif; }
 
-#content { width: 100%; height: 100%; padding-right: 200px; }
+#content { width: 100%; height: 100%; }
 
 #menu li { display: inline; }
 
@@ -15,8 +15,6 @@
 #container-nav { width: content; }
 
 header { width: 100%; display: flex; justify-content: space-between; }
-
-#content { padding-left: 150px; }
 
 .gros-titre { font-size: 40px; font-weight: 900; text-transform: uppercase; text-align: center; }
 
@@ -36,10 +34,14 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #details { background-color: rgba(22, 22, 22, 0.05); }
 
-#part-deux { display: flex; margin-top: -20px; margin-left: 10%; }
+#part-deux { display: flex; margin-top: -20px; margin-left: 10%; flex-direction: column; }
 
 #prestation-titre { margin-top: -70px; }
 
-@media all and (max-width: 990px) { #content { width: 100%; height: 100%; padding-left: 0%; padding-right: 0%; } #prestation-titre { margin-top: 0%; } #images a { width: 50%; } #details { display: flex; flex-direction: column; margin-top: 25px; margin-right: 4%; margin-left: 0%; line-height: 25px; border-radius: 41px; padding-left: 50px; padding-right: 50px; } header { margin-bottom: 200px; } }
+.fleche-droite { transform: rotate(90deg); width: auto; height: 20px; }
+
+.information { align-items: center; display: flex; }
+
+@media all and (max-width: 990px) { #content { width: 100%; height: 100%; padding-left: 0%; padding-right: 0%; } #prestation-titre { margin-top: 0%; } #images a { width: 50%; } #details { display: flex; flex-direction: column; margin-top: 25px; margin-right: 4%; margin-left: 0%; line-height: 25px; border-radius: 41px; padding-left: 50px; padding-right: 50px; } .phrase-accroche { font-size: 17px !important; } #texte-prestation { font-size: 14px !important; } #details > p { font-size: 14px !important; } .info-contact { font-size: 14px !important; } }
 
 /*# sourceMappingURL=formations.css.map */

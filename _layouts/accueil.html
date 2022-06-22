@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html>
-{% include header.html %}
+  {% include header.html %}
 
-
-<div id="container-logo">
-  <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
-</div>
-<div id="content">
-  <div id="photo-accueil">
-    <img src="{{page.image-accueil}}" />
-  </div>
-
-  <div id="core-content">
+  <div id="container-logo">
+    <a  href="/"><img id="main-logo" src="/assets/images/logo/Logo.png" /></a>
     <header>
-      <div id="container-nav">
-        <nav>
-          <div id="burger">
-            <label id="label-menu" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-          </div>
+      <nav id="main-menu">
+        <ol id="menu">
+           {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name }}
+              </a></li>
+            {% endfor %}
+        </ol>
+      </nav>
 
-          <ol id="menu">
-            {% for item in site.data.navigation %}
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>X</h3>
+          <ol>
+             {% for item in site.data.navigation %}
             <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name }}
               </a></li>
             {% endfor %}
           </ol>
+          {% assign sm = site.data.social-media %} {% for entry in sm %} {% assign key =
+  entry | first %} {% if sm[key].id %}
+  <a
+    target="_blank"
+    href="{{ sm[key].href }}{{ sm[key].id }}"
+    title="{{ sm[key].title }}"
+  >
+    <img src="{{ sm[key].image }}" alt=""
+  /></a>
+  {% endif %} {% endfor %}
         </nav>
+      </label>
 
-      </div>
+     
     </header>
-    <div id="main-content">
+  </div>
+  <div id="content">
+    <div id="photo-accueil">
+      <img src="{{page.image-accueil}}" />
+    </div>
 
-      <div id="content-accueil">
-        <div id="texte-accueil">
-          {{content}}
-          <button class="btn-reserver"><span>Réserver</span></button>
+    <div id="core-content">
+      <div id="main-content">
+        <div id="content-accueil">
+          <img id="image-background-text" src="{{page.image-accueil}}" />
+          <div id="texte-accueil">
+             <button class="btn-reserver btn-reserver-responsive cache"><span>En savoir plus</span></button>
+            
+            {{content}}
+           <button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
-
-</div>
-{% include footer.html %}
-{% include scripts.html %}
-
+  {% include footer.html %} {% include scripts.html %}
 </html>

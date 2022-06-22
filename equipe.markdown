@@ -37,7 +37,7 @@ photo_presentation_2: assets/images/presentations/MR vide.png
 </div>
 <div id="resumer">
   <div id="resumer-content">
-    <h2 class="gros-titre">Pour résumer</h2>
+    <h2 class="gros-titre gras">Pour résumer</h2>
     <p>
       La compagnie J't'embrasse est née d'une complicité entre trivial et
       poésie, <br />

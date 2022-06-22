@@ -16,9 +16,15 @@
   <script src="/assets/js/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
   <link
     rel="stylesheet"
+    href="/assets/js/libraries/nanogallery2-3.0.5/dist/css/nanogallery2.min.css"
+  />
+  <script src="http://localhost:4000/assets/js/libraries/nanogallery2-3.0.5/dist/jquery.nanogallery2.min.js"></script>
+  <link
+    rel="stylesheet"
     href="/assets/js/libraries/splide-4.0.1/dist/css/splide.min.css"
   />
-  
+   
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
 </head>
 
   <body>
@@ -26,36 +32,64 @@
           <header>
   <div id="container-logo">
     <a href="/"
-      ><img src="/assets/images/logo/Logo.png"
+      ><img  id="main-logo" src="/assets/images/logo/Logo.png"
     /></a>
+    <div id="menu-button">
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
+  </div>
   </div>
 
     <div id="container-nav">
-        <nav>
-            	<div id="burger">
-<label id="label-menu" for="toggle">☰</label>
-    <input type="checkbox" id="toggle">
-                </div>
+        
+            	<nav id="main-menu">
+        <ol id="menu">
+           
+            <li><a href="/" >
+                Accueil
+              </a></li>
+            
+            <li><a href="/spectacles.html" >
+                Spectacles
+              </a></li>
+            
+            <li><a href="/equipe.html" >
+                L'équipe
+              </a></li>
+            
+            <li><a href="/formations.html" >
+                Formations
+              </a></li>
+            
+        </ol>
+      </nav>
 
-            <ol id="menu">
-                
-                <li><a href="/" >
-      Accueil
-    </a></li>
-                
-                <li><a href="/spectacles.html" >
-      Spectacles
-    </a></li>
-                
-                <li><a href="/equipe.html" >
-      L'équipe
-    </a></li>
-                
-                <li><a href="/formations.html" >
-      Formations
-    </a></li>
-                
-            </ol>
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>X</h3>
+          <ol>
+             
+            <li><a href="/" >
+                Accueil
+              </a></li>
+            
+            <li><a href="/spectacles.html" >
+                Spectacles
+              </a></li>
+            
+            <li><a href="/equipe.html" >
+                L'équipe
+              </a></li>
+            
+            <li><a href="/formations.html" >
+                Formations
+              </a></li>
+            
+          </ol>
+        </nav>
+      </label>
         </nav>
     </div>
 
@@ -64,9 +98,67 @@
   <a href="/spectacles.html"><p>Spectacles</p></a>
 </div>
 <div id="tout">
-  <div id="fiche">
-    <div id="box">
-      <div id="images-min">
+  <div id="fiche" class="fiche-mobile">
+    <div id="image-affiche">
+      <div id="image-max">
+        <a href=""><img class="image-affiche-max" src="/assets/images/spectacles/affiche-spectacle.png" /></a>
+      </div>
+      <div class="titre_button">
+        <div id="clic">
+          <a href="https://www.google.fr"
+            ><button class="btn-reserver">
+              <span>En savoir plus</span>
+            </button></a
+          >
+        </div>
+        <h1 class="titre-fiche">TU DORS</h1>
+      </div>
+    </div>
+    <div id="textes-fiche"><p>Dans un bar, alors qu’il noie sa mélancolie à une heure tardive, un homme est mis au défi par son double imaginaire : se réapproprier son rêve d’enfant et prendre sa revanche sur la personne qui l’a empêché de le réaliser.  <br /><br /> Le tout en 24H chrono. <br /> Le comédien demande au public :  <br /> A quoi rêvait notre héros lorsqu’il était enfant?  <br /> A cause de qui notre héros a-t-il abandonné ?   <br /> <br /> Les réponses offertes par le public forment le point de départ du spectacle.</p>
+</div>
+    <div id="galerie">
+      <!-- <h2 class="gros-titre">Galerie</h2> -->
+      <div
+        id="nanogallery2"
+        data-nanogallery2='{
+                        "thumbnailHeight":  150,
+                        "thumbnailWidth":   150,
+                        "itemsBaseURL":     http://localhost:4000
+                      }'
+      >
+        <!-- gallery content -->
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-721k2y.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-721k2y.jpeg"
+        >
+          Test image
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9djdl.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9djdl.jpeg"
+        >
+          Testicouille
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9q1q5.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9q1q5.jpeg"
+        >
+          Test image
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v99zvm.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v99zvm.jpeg"
+        >
+          Test image
+        </a>
+        
+        <!-- ### end of the gallery definition ### -->
+      </div>
+      <!-- <div id="images-min">
         <div class="splide" role="group" aria-label="photos spectacle">
           <div class="splide__track">
             <ul class="splide__list">
@@ -88,21 +180,95 @@
                  
             </ul>
           </div>
-        </div>
+        </div> -->
+    </div>
+  </div>
+
+  <div id="fiche" class="fiche-desktop">
+    <div id="galerie-desktop">
+      <!-- <h2 class="gros-titre">Galerie</h2> -->
+      <div
+        id="nanogallery2-desktop"
+        data-nanogallery2='{
+                        "thumbnailHeight":  50,
+                        "thumbnailWidth":   50,
+                        "itemsBaseURL":     http://localhost:4000
+                      }'
+      >
+        <!-- gallery content -->
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-721k2y.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-721k2y.jpeg"
+        >
+          Test image
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9djdl.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9djdl.jpeg"
+        >
+          Testicouille
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9q1q5.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v9q1q5.jpeg"
+        >
+          Test image
+        </a>
+        
+        <a
+          href="http://localhost:4000/assets/images/photo_gallery/wallhaven-v99zvm.jpeg"
+          data-ngThumb="http://localhost:4000/assets/images/photo_gallery/wallhaven-v99zvm.jpeg"
+        >
+          Test image
+        </a>
+        
+        <!-- ### end of the gallery definition ### -->
       </div>
-      <div id="image-max">
-        <a href=""><img src="/assets/images/spectacles/affiche-spectacle.png" /></a>
+      <!-- <div id="images-min">
+        <div class="splide" role="group" aria-label="photos spectacle">
+          <div class="splide__track">
+            <ul class="splide__list">
+               
+              <li class="splide__slide">
+                <img width="125px" src="/assets/images/photo_gallery/wallhaven-721k2y.jpeg" />
+              </li>
+
+                
+              <li class="splide__slide">
+                <img width="125px" src="/assets/images/photo_gallery/wallhaven-v9djdl.jpeg" />
+              </li>
+
+                
+              <li class="splide__slide">
+                <img width="125px" src="/assets/images/photo_gallery/wallhaven-v9q1q5.jpeg" />
+              </li>
+
+                 
+            </ul>
+          </div>
+        </div> -->
+    </div>
+    <div id="image-affiche" class="image-affiche-desktop">
+      <div id="image-max" class="image-max-desktop">
+        <a href=""><img class="image-affiche-max" src="/assets/images/spectacles/affiche-spectacle.png" /></a>
       </div>
     </div>
-    <div id="textes-fiche">
-      <h1>TU DORS</h1>
+    <div id="textes-fiche" class="textes-fiche-desktop">
+      <div class="titre_button">
+        <h1 class="titre-fiche desktop">TU DORS</h1>
+      </div>
       <p>Dans un bar, alors qu’il noie sa mélancolie à une heure tardive, un homme est mis au défi par son double imaginaire : se réapproprier son rêve d’enfant et prendre sa revanche sur la personne qui l’a empêché de le réaliser.  <br /><br /> Le tout en 24H chrono. <br /> Le comédien demande au public :  <br /> A quoi rêvait notre héros lorsqu’il était enfant?  <br /> A cause de qui notre héros a-t-il abandonné ?   <br /> <br /> Les réponses offertes par le public forment le point de départ du spectacle.</p>
 
-    </div>
-    <div id="clic">
-      <a href="https://www.google.fr"
-        ><button class="btn-reserver"><span>Réserver</span></button></a
-      >
+      <div id="clic">
+        <a href="https://www.google.fr"
+          ><button class="btn-reserver">
+            <span>En savoir plus</span>
+          </button></a
+        >
+      </div>
     </div>
   </div>
 </div>
@@ -194,9 +360,12 @@
     fondée en 2021, par Maxime Robert & Florian Bresler.</span
   >
 </div>
-<!-- <div id="texte-deux">
-  <span>Site blablabla moi</span>
-</div> -->
+<div id="texte-deux">
+  <span
+    >Réalisé par
+    <a href="http://www.celine-creates.com">Celine Creates</a></span
+  >
+</div>
 </div>
   <div id="reseaux">
 <div id="social-media">
@@ -219,7 +388,7 @@
    
   <div>
     <button id="back-top">
-      <img src="assets/images/navigation/Back_Top.svg" alt="" />
+      <img src="/assets/images/navigation/Back_Top.svg" alt="" />
     </button>
   </div>
 </div>

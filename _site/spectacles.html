@@ -19,9 +19,15 @@
   <script src="/assets/js/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
   <link
     rel="stylesheet"
+    href="/assets/js/libraries/nanogallery2-3.0.5/dist/css/nanogallery2.min.css"
+  />
+  <script src="http://localhost:4000/assets/js/libraries/nanogallery2-3.0.5/dist/jquery.nanogallery2.min.js"></script>
+  <link
+    rel="stylesheet"
     href="/assets/js/libraries/splide-4.0.1/dist/css/splide.min.css"
   />
-  
+   
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
 </head>
 
   <body>
@@ -29,36 +35,64 @@
           <header>
   <div id="container-logo">
     <a href="/"
-      ><img src="/assets/images/logo/Logo.png"
+      ><img  id="main-logo" src="/assets/images/logo/Logo.png"
     /></a>
+    <div id="menu-button">
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
+    <div class="menu-button-bar"></div>
+  </div>
   </div>
 
     <div id="container-nav">
-        <nav>
-            	<div id="burger">
-<label id="label-menu" for="toggle">☰</label>
-    <input type="checkbox" id="toggle">
-                </div>
+        
+            	<nav id="main-menu">
+        <ol id="menu">
+           
+            <li><a href="/" >
+                Accueil
+              </a></li>
+            
+            <li><a href="/spectacles.html" class="current" >
+                Spectacles
+              </a></li>
+            
+            <li><a href="/equipe.html" >
+                L'équipe
+              </a></li>
+            
+            <li><a href="/formations.html" >
+                Formations
+              </a></li>
+            
+        </ol>
+      </nav>
 
-            <ol id="menu">
-                
-                <li><a href="/" >
-      Accueil
-    </a></li>
-                
-                <li><a href="/spectacles.html" class="current" >
-      Spectacles
-    </a></li>
-                
-                <li><a href="/equipe.html" >
-      L'équipe
-    </a></li>
-                
-                <li><a href="/formations.html" >
-      Formations
-    </a></li>
-                
-            </ol>
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>X</h3>
+          <ol>
+             
+            <li><a href="/" >
+                Accueil
+              </a></li>
+            
+            <li><a href="/spectacles.html" class="current" >
+                Spectacles
+              </a></li>
+            
+            <li><a href="/equipe.html" >
+                L'équipe
+              </a></li>
+            
+            <li><a href="/formations.html" >
+                Formations
+              </a></li>
+            
+          </ol>
+        </nav>
+      </label>
         </nav>
     </div>
 
@@ -85,7 +119,7 @@
         </button>
         <button class="splide__arrow splide__arrow--next">
           <img
-            id="suivant"
+            id="precedent"
             src="assets/images/fiches/triangle-fiche.png"
             alt=""
             style="left: 100px; position: absolute; max-width: unset"
@@ -110,7 +144,9 @@
             </div>
             <div class="container-btn-reserver">
               <a href="https://www.google.fr"
-                ><button class="btn-reserver"><span>Réserver</span></button></a
+                ><button class="btn-reserver">
+                  <span>En savoir plus</span>
+                </button></a
               >
             </div>
           </div>
@@ -130,7 +166,9 @@
             </div>
             <div class="container-btn-reserver">
               <a href="https://www.google.fr"
-                ><button class="btn-reserver"><span>Réserver</span></button></a
+                ><button class="btn-reserver">
+                  <span>En savoir plus</span>
+                </button></a
               >
             </div>
           </div>
@@ -150,7 +188,9 @@
             </div>
             <div class="container-btn-reserver">
               <a href="https://www.google.fr"
-                ><button class="btn-reserver"><span>Réserver</span></button></a
+                ><button class="btn-reserver">
+                  <span>En savoir plus</span>
+                </button></a
               >
             </div>
           </div>
@@ -169,9 +209,12 @@
     fondée en 2021, par Maxime Robert & Florian Bresler.</span
   >
 </div>
-<!-- <div id="texte-deux">
-  <span>Site blablabla moi</span>
-</div> -->
+<div id="texte-deux">
+  <span
+    >Réalisé par
+    <a href="http://www.celine-creates.com">Celine Creates</a></span
+  >
+</div>
 </div>
   <div id="reseaux">
 <div id="social-media">
@@ -194,7 +237,7 @@
    
   <div>
     <button id="back-top">
-      <img src="assets/images/navigation/Back_Top.svg" alt="" />
+      <img src="/assets/images/navigation/Back_Top.svg" alt="" />
     </button>
   </div>
 </div>

@@ -36,7 +36,7 @@ nature: fiche
       </p>
     </div>
     <div id="clic">
-      <button class="btn-reserver"><span>Réserver</span></button>
+      <button class="btn-reserver"><span>En savoir plus</span></button>
     </div>
   </div>
 </div>

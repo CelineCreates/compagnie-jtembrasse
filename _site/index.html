@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8" />
 <title>CIE J't'embrasse</title>
 <meta name="author" content="CelineCreates" />
@@ -19,32 +19,49 @@
   <script src="/assets/js/libraries/splide-4.0.1/dist/js/splide.min.js"></script>
   <link
     rel="stylesheet"
+    href="/assets/js/libraries/nanogallery2-3.0.5/dist/css/nanogallery2.min.css"
+  />
+  <script src="http://localhost:4000/assets/js/libraries/nanogallery2-3.0.5/dist/jquery.nanogallery2.min.js"></script>
+  <link
+    rel="stylesheet"
     href="/assets/js/libraries/splide-4.0.1/dist/css/splide.min.css"
   />
-  
+   
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
 </head>
 
 
-
-<div id="container-logo">
-  <a href="/"><img src="/assets/images/logo/Logo.png" /></a>
-</div>
-<div id="content">
-  <div id="photo-accueil">
-    <img src="assets/images/index/affiche-accueil.png" />
-  </div>
-
-  <div id="core-content">
+  <div id="container-logo">
+    <a  href="/"><img id="main-logo" src="/assets/images/logo/Logo.png" /></a>
     <header>
-      <div id="container-nav">
-        <nav>
-          <div id="burger">
-            <label id="label-menu" for="toggle">☰</label>
-            <input type="checkbox" id="toggle">
-          </div>
-
-          <ol id="menu">
+      <nav id="main-menu">
+        <ol id="menu">
+           
+            <li><a href="/" class="current" >
+                Accueil
+              </a></li>
             
+            <li><a href="/spectacles.html" >
+                Spectacles
+              </a></li>
+            
+            <li><a href="/equipe.html" >
+                L'équipe
+              </a></li>
+            
+            <li><a href="/formations.html" >
+                Formations
+              </a></li>
+            
+        </ol>
+      </nav>
+
+      <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+        <nav id="sidebar-menu">
+          <h3>X</h3>
+          <ol>
+             
             <li><a href="/" class="current" >
                 Accueil
               </a></li>
@@ -62,15 +79,42 @@
               </a></li>
             
           </ol>
+             
+  <a
+    target="_blank"
+    href="https://www.facebook.com/Cie-Jtembrasse-107606308245139"
+    title="Facebook"
+  >
+    <img src="/assets/images/footer/facebook.png" alt=""
+  /></a>
+     
+  <a
+    target="_blank"
+    href="https://www.instagram.com/cie_jtembrasse"
+    title="Instagram"
+  >
+    <img src="/assets/images/footer/instagram.png" alt=""
+  /></a>
+   
         </nav>
+      </label>
 
-      </div>
+     
     </header>
-    <div id="main-content">
+  </div>
+  <div id="content">
+    <div id="photo-accueil">
+      <img src="assets/images/index/affiche-accueil.png" />
+    </div>
 
-      <div id="content-accueil">
-        <div id="texte-accueil">
-          <h5 id="prochain-spectacle">Prochain spectacle</h5>
+    <div id="core-content">
+      <div id="main-content">
+        <div id="content-accueil">
+          <img id="image-background-text" src="assets/images/index/affiche-accueil.png" />
+          <div id="texte-accueil">
+             <button class="btn-reserver btn-reserver-responsive cache"><span>En savoir plus</span></button>
+            
+            <h5 id="prochain-spectacle">Prochain spectacle</h5>
 
 <h1 id="tu-dors">TU DORS</h1>
 
@@ -88,23 +132,26 @@
 
 <p>Les réponses offertes par le public forment le point de départ du spectacle.</p>
 
-          <button class="btn-reserver"><span>Réserver</span></button>
+           <button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
-
-</div>
-<footer>
+  <footer>
   <div id="texte-footer"><div id="texte-un">
   <span
     >La Compagnie J't'embrasse est une compagnie d'improvisation professionnelle
     fondée en 2021, par Maxime Robert & Florian Bresler.</span
   >
 </div>
-<!-- <div id="texte-deux">
-  <span>Site blablabla moi</span>
-</div> -->
+<div id="texte-deux">
+  <span
+    >Réalisé par
+    <a href="http://www.celine-creates.com">Celine Creates</a></span
+  >
+</div>
 </div>
   <div id="reseaux">
 <div id="social-media">
@@ -127,18 +174,16 @@
    
   <div>
     <button id="back-top">
-      <img src="assets/images/navigation/Back_Top.svg" alt="" />
+      <img src="/assets/images/navigation/Back_Top.svg" alt="" />
     </button>
   </div>
 </div>
 
 </div>
 </footer>
-
-<script src="http://localhost:4000/assets/js/global.js"></script>
+ <script src="http://localhost:4000/assets/js/global.js"></script>
  
 <script src="http://localhost:4000/assets/js/accueil.js"></script>
    
-
 
 </html>

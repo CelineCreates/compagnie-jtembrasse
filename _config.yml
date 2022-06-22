@@ -17,13 +17,18 @@ collections:
   uploads:
     title: Uploads
     output: true
+  presentations:
+    title: Presentations
+    output: true
+
 defaults:
-- scope:
-    path: ''
-    type: spectacles
-  values:
-    layout: fiche
-- scope:
-    path: ''
-  values:
-    layout: default
+  - scope:
+      path: ""
+      type: spectacles
+    values:
+      layout: fiche
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation

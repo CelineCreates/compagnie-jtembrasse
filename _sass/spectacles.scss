@@ -5,7 +5,8 @@
 #content {
   width: 100%;
   height: 100%;
-  padding-right: 200px;
+  // padding-right: 200px;
+  // padding-left: 200px;
 }
 
 #menu li {
@@ -33,6 +34,8 @@
 
 #container-logo {
   width: 139px;
+  // margin-top: 15px;
+  // margin-left: 85px;
 }
 
 #container-nav {
@@ -40,7 +43,6 @@
 }
 
 #container-nav {
-  right: 10px;
   // position: absolute;
   right: 200px;
 }
@@ -52,26 +54,19 @@ header {
 }
 
 #content {
-  padding-left: 150px;
+  // padding-left: 150px;
 }
 
 /* Css pour les spectacles **/
 
 #spectacles {
   width: 100%;
-  // height: 644px;
-  height: inherit;
-  // display: flex;
-  border-radius: 20px;
-  border: solid;
-  border-color: #f2977d;
-  border-radius: 52px;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 #titre {
-  width: 100%;
+  width: 94%;
   display: flex;
   justify-content: end;
   margin-top: -35px;
@@ -84,14 +79,23 @@ header {
 }
 
 #contenu {
+  margin-bottom: 5px;
+  padding: 11px;
   text-align: center;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  padding-top: 2%;
+  margin-top: 5px;
   justify-content: center;
+  width: 80%;
+  height: min-content;
+  border: solid;
+  border-color: #f2977d;
+  border-radius: 52px;
+  display: flex;
+  align-items: center;
 }
-
+section#splide01 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .texte-spectacles {
   display: flex;
   justify-content: center;
@@ -119,7 +123,7 @@ header {
   padding: 10px;
   color: white;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .container-btn-reserver {
@@ -134,21 +138,25 @@ header {
   align-items: center;
   flex-direction: column;
   height: fit-content;
-  max-width: fit-content !important;
-  width: fit-content;
-  max-width: fit-content !important;
+  // max-width: fit-content !important;
+  // width: fit-content;
 }
 
 .splide__arrow {
   width: 0 !important ;
 }
 
-@media all and (max-width: 990px) {
+@media all and (max-width: 1100px) {
   #content {
-    width: 100%;
-    height: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
+    width: fit-content;
+    height: fit-content;
+    // padding-left: 100px;
+    // padding-right: 100px;
+  }
+
+  #suivant,
+  #precedent {
+    position: initial !important;
   }
   #titre {
     width: 100%;
@@ -166,12 +174,12 @@ header {
     border-radius: 52px;
   }
   #contenu {
-    height: auto;
+    height: max-content;
     display: flex;
     width: 100%;
     align-items: center;
     flex-direction: column;
-    overflow: auto;
+    // overflow: auto;
   }
   .une-carte {
     margin-bottom: 2%;
@@ -185,6 +193,24 @@ header {
   }
 
   header {
-    margin-bottom: 125px;
+    // margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 710px) {
+  #suivant,
+  #precedent {
+    position: initial !important;
+  }
+}
+
+@media all and (max-width: 990px) {
+  #content {
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  .splide__track--draggable {
+    margin-bottom: 50px;
   }
 }
