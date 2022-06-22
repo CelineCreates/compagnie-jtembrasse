@@ -1,4 +1,4 @@
-body { width: 100vw; height: 100vh; display: flex; }
+body { display: flex; }
 
 img { max-width: 100%; height: auto; }
 
@@ -23,6 +23,12 @@ nav#sidebar-menu { z-index: 999; }
 #burger { display: none; }
 
 #menu { display: flex; justify-content: end; }
+
+#content { max-width: 100vw !important; max-height: 100vh !important; overflow: auto; }
+
+#main-logo { padding: 10px !important; }
+
+body { margin: unset; }
 
 footer { align-items: center; text-align: center; justify-content: center; width: 100%; display: flex; justify-content: space-between; background-color: none; height: auto; min-height: 50px; }
 
@@ -58,7 +64,7 @@ footer { align-items: center; text-align: center; justify-content: center; width
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu { visibility: visible; right: 0; }
 
-@media screen and (max-width: 1300px) { #main-menu { display: none; } #hamburger-menu { display: block; position: absolute; margin-right: 10px; } #container-nav { display: flex; justify-content: end; } }
+@media screen and (max-width: 1300px) { #main-menu { display: none; } #hamburger-menu { display: block; position: relative; margin-right: 10px; } #container-nav { display: flex; justify-content: end; } }
 
 @media screen and (max-width: 900px) { footer > #texte-footer > #texte-un { font-size: 10px; } footer > #texte-footer > #texte-deux { font-size: 11px; } body { margin: unset; } #texte-footer { margin: 5px; } #contenu { font-size: 16px !important; } .gros-titre { font-size: 30px !important; } }
 

@@ -63,8 +63,8 @@ div#resumer {
 
 #container-logo {
   width: 139px;
-  margin-left: 10px;
-  margin-top: 10px;
+  // margin-left: 10px;
+  // margin-top: 10px;
 }
 
 #container-nav {
@@ -159,8 +159,13 @@ header {
 
 #photo {
   display: flex;
-  justify-content: space-between;
   margin: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.une_photo_equipe {
+  margin: auto;
 }
 
 #photo_1 {

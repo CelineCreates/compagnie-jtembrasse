@@ -16,7 +16,7 @@ header { display: flex; width: min-content; height: fit-content; margin-right: 5
 
 body { flex-direction: column; }
 
-#content { display: flex; height: auto; }
+#content { display: flex; }
 
 #core-content { display: flex; flex-direction: column; width: 50%; max-width: 50%; text-align: start; background-color: #f1f1f1; }
 

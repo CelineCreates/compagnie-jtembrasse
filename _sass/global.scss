@@ -4,8 +4,6 @@ body {
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   display: flex;
 }
 img {
@@ -55,6 +53,20 @@ nav#sidebar-menu {
 #menu {
   display: flex;
   justify-content: end;
+}
+
+#content {
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  overflow: auto;
+}
+
+#main-logo {
+  padding: 10px !important;
+}
+
+body {
+  margin: unset;
 }
 
 // --------------------FOOTER-------------------
@@ -199,7 +211,7 @@ footer {
   }
   #hamburger-menu {
     display: block;
-    position: absolute;
+    position: relative;
     // right: 30px;
     // z-index: 10;
     margin-right: 10px;

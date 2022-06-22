@@ -2,16 +2,17 @@
 layout: default
 custom_css: fiches
 custom_js: fiches
+nature: fiche
 ---
 
 <div id="retour">
   <a href="/spectacles.html"><p>Spectacles</p></a>
 </div>
 <div id="tout">
-  <div id="fiche">
+  <div id="fiche" class="fiche-mobile">
     <div id="image-affiche">
       <div id="image-max">
-        <a href=""><img src="{{page.image}}" /></a>
+        <a href=""><img class="image-affiche-max" src="{{page.image}}" /></a>
       </div>
       <div class="titre_button">
         <div id="clic">
@@ -25,8 +26,28 @@ custom_js: fiches
       </div>
     </div>
     <div id="textes-fiche">{{ page.presentation | markdownify }}</div>
-    <div id="box">
-      <div id="images-min">
+    <div id="galerie">
+      <!-- <h2 class="gros-titre">Galerie</h2> -->
+      <div
+        id="nanogallery2"
+        data-nanogallery2='{
+                        "thumbnailHeight":  150,
+                        "thumbnailWidth":   150,
+                        "itemsBaseURL":     {{site.url}}
+                      }'
+      >
+        <!-- gallery content -->
+        {% for image in site.photo_spectacles %}
+        <a
+          href="{{site.url}}{{ image.image_path }}"
+          data-ngThumb="{{site.url}}{{ image.image_path }}"
+        >
+          {{ image.title}}
+        </a>
+        {% endfor %}
+        <!-- ### end of the gallery definition ### -->
+      </div>
+      <!-- <div id="images-min">
         <div class="splide" role="group" aria-label="photos spectacle">
           <div class="splide__track">
             <ul class="splide__list">
@@ -39,7 +60,63 @@ custom_js: fiches
               {% endif %} {% endfor %}
             </ul>
           </div>
-        </div>
+        </div> -->
+    </div>
+  </div>
+
+  <div id="fiche" class="fiche-desktop">
+    <div id="galerie-desktop">
+      <!-- <h2 class="gros-titre">Galerie</h2> -->
+      <div
+        id="nanogallery2-desktop"
+        data-nanogallery2='{
+                        "thumbnailHeight":  50,
+                        "thumbnailWidth":   50,
+                        "itemsBaseURL":     {{site.url}}
+                      }'
+      >
+        <!-- gallery content -->
+        {% for image in site.photo_spectacles %}
+        <a
+          href="{{site.url}}{{ image.image_path }}"
+          data-ngThumb="{{site.url}}{{ image.image_path }}"
+        >
+          {{ image.title}}
+        </a>
+        {% endfor %}
+        <!-- ### end of the gallery definition ### -->
+      </div>
+      <!-- <div id="images-min">
+        <div class="splide" role="group" aria-label="photos spectacle">
+          <div class="splide__track">
+            <ul class="splide__list">
+              {% for photo in site.photo_spectacles %} {% if photo.spectacle ==
+              page.title %}
+              <li class="splide__slide">
+                <img width="125px" src="{{ photo.image_path }}" />
+              </li>
+
+              {% endif %} {% endfor %}
+            </ul>
+          </div>
+        </div> -->
+    </div>
+    <div id="image-affiche" class="image-affiche-desktop">
+      <div id="image-max" class="image-max-desktop">
+        <a href=""><img class="image-affiche-max" src="{{page.image}}" /></a>
+      </div>
+    </div>
+    <div id="textes-fiche" class="textes-fiche-desktop">
+      <div class="titre_button">
+        <h1 class="titre-fiche desktop">{{page.title}}</h1>
+      </div>
+      {{ page.presentation | markdownify }}
+      <div id="clic">
+        <a href="{{page.lien-reservation}}"
+          ><button class="btn-reserver">
+            <span>En savoir plus</span>
+          </button></a
+        >
       </div>
     </div>
   </div>
