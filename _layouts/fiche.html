@@ -38,29 +38,17 @@ nature: fiche
       >
         <!-- gallery content -->
         {% for image in site.photo_spectacles %}
+        {% if image.spectacle ==
+          page.title %}
         <a
           href="{{site.url}}{{ image.image_path }}"
           data-ngThumb="{{site.url}}{{ image.image_path }}"
         >
           {{ image.title}}
         </a>
+        {% endif %} 
         {% endfor %}
-        <!-- ### end of the gallery definition ### -->
       </div>
-      <!-- <div id="images-min">
-        <div class="splide" role="group" aria-label="photos spectacle">
-          <div class="splide__track">
-            <ul class="splide__list">
-              {% for photo in site.photo_spectacles %} {% if photo.spectacle ==
-              page.title %}
-              <li class="splide__slide">
-                <img width="125px" src="{{ photo.image_path }}" />
-              </li>
-
-              {% endif %} {% endfor %}
-            </ul>
-          </div>
-        </div> -->
     </div>
   </div>
 
@@ -77,12 +65,15 @@ nature: fiche
       >
         <!-- gallery content -->
         {% for image in site.photo_spectacles %}
+        {% if image.spectacle ==
+          page.title %}
         <a
           href="{{site.url}}{{ image.image_path }}"
           data-ngThumb="{{site.url}}{{ image.image_path }}"
         >
           {{ image.title}}
         </a>
+        {% endif %} 
         {% endfor %}
         <!-- ### end of the gallery definition ### -->
       </div>

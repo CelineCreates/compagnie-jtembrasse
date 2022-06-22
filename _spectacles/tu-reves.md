@@ -1,79 +1,27 @@
 ---
 title: TU RÊVES
-lieu: Perreux-sur-Marne
+lieu: Perreux-Sur-Marne
 date-spectacle: 11 & 12 mars
 lien-reservation: https://www.google.fr
-image: https://via.placeholder.com/314x445
+lien-fiche: https://www.google.fr
+image: "/assets/images/spectacles/affiche-spectacle.png"
+youtube_url: https://www.youtube.com/embed/qgLPZoRyUfU
 nature: fiche
+presentation: " Dans un bar, alors qu'il noie sa mélancolie à une heure tardive, un
+  homme est mis au défi par son double imaginaire : se réapproprier son rêve d’enfant
+  et prendre sa revanche sur la personne qui l’a empêché de le réaliser.  <br><br>
+  Le tout en 24H chrono. <br> Le comédien demande au public :  <br> A quoi rêvait
+  notre héros lorsqu'il était enfant ?  <br> A cause de qui notre héros a-t-il abandonné
+  ?   <br> <br> Les réponses offertes par le public forment le point de départ du
+  spectacle. "
+distribution: 'Seul en scène improvisé : Florian BRESLER  <br> Mise en scène et mise
+  en scène live : Maxime ROBERT  <br> Mise en lumière improvisée : Antoine Noirant
+  <br>'
+production: Cie J't'embrasse
+lien-facebook: https://www.facebook.com/Cie-Jtembrasse-107606308245139
+lien-instagram: https://www.instagram.com/cie_jtembrasse/
 ---
 
-<div id="tout">
-  <div id="fiche">
-    <div id="box">
-      <div id="images-min">
-        <a href=""><img src="https://via.placeholder.com/125" /></a>
-        <a href=""><img src="https://via.placeholder.com/125" /></a>
-        <a href=""><img src="https://via.placeholder.com/125" /></a>
-        <a href=""><img src="https://via.placeholder.com/35" /></a>
-      </div>
-      <div id="image-max">
-        <a href=""><img src="https://via.placeholder.com/426x500" /></a>
-      </div>
-    </div>
-    <div id="textes-fiche">
-      <h1>{{page.title}}</h1>
-      <p>
-        Dans un bar, alors qu'il noie sa mélancolie à une heure tardive, un
-        homme est mis au défi par son double imaginaire : se réapproprier son
-        rêve d’enfant et prendre sa revanche sur la personne qui l’a empêché de
-        le réaliser.<br />
-        Le tout en 24H chrono. <br />
-        Le comédien demande au public :<br />
-        A quoi rêvait notre héros lorsqu'il était enfant<br />
-        A cause de qui notre héros a-t-il abandonné ?<br />
-        Les réponses offertes par le public forment le point de départ du
-        spectacle.
-      </p>
-    </div>
-    <div id="clic">
-      <button class="btn-reserver"><span>En savoir plus</span></button>
-    </div>
-  </div>
-</div>
-
-<div id="trailer">
-  <div id="titre-deux">
-    <h3>TEASER : TU RÊVES</h3>
-  </div>
-  <div id="teaser">
-    <div id="video">
-      <a href=""><img src="https://via.placeholder.com/561x359" /></a>
-    </div>
-    <div id="distribution">
-      <p>
-        <span class="gros">Distribution</span> <br />
-        Seul en scène improvisé : Florian BRESLER <br />
-        Mise en scène et mise en scène live : Maxime ROBERT<br />
-        Mise en lumière improvisée : Antoine Noirant
-      </p>
-      <p>
-        <span class="gros">Production</span> <br />
-        Cie J't'embrasse
-      </p>
-      <a href=""><span class="gros">Dossier artistique</span></a>
-      <div id="partager">
-        <p>A PARTAGER :</p>
-        <div id="reseaux">
-          <div id="fb">
-            <a href=""><img src="https://via.placeholder.com/39x39" /></a>
-          </div>
-          <div id="fb">
-            <a href=""><img src="https://via.placeholder.com/39x39" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div id="infos">
     <div id="pratique">
       <p class="gros">Infos pratiques</p>
@@ -104,4 +52,3 @@ nature: fiche
       </p>
     </div>
   </div>
-</div>

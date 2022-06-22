@@ -9,7 +9,7 @@ layout: accueil
 
 ##### Prochain spectacle
 
-# TU DORS
+# TU RÊVES
 
 ##### Seul en scène improvisé
 
