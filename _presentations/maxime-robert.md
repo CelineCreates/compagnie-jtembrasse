@@ -3,7 +3,7 @@ title: Maxime ROBERT
 nom: Maxime ROBERT
 metier: Comédien, improvisateur, intervenant, réalisateur, metteur en scène
 image: "/assets/images/presentations/MR vide.png"
-image-equipe: /assets/images/equipe/MR.png
+image-equipe: "/assets/images/equipe/MR.png"
 nature: presentation
 ---
 
