@@ -11,24 +11,23 @@ collections:
   posts:
     title: Posts
     output: true
+  presentations:
+    title: Presentations
+    output: true
   spectacles:
     title: Spectacles
     output: true
   uploads:
     title: Uploads
     output: true
-  presentations:
-    title: Presentations
-    output: true
-
 defaults:
-  - scope:
-      path: ""
-      type: spectacles
-    values:
-      layout: fiche
-  - scope:
-      path: ""
-      type: presentations
-    values:
-      layout: presentation
+- scope:
+    path: ''
+    type: spectacles
+  values:
+    layout: fiche
+- scope:
+    path: ''
+    type: presentations
+  values:
+    layout: presentation

@@ -1,4 +1,5 @@
 ---
+title: Florian Bresler
 nom: Florian Bresler
 metier: Comédien, improvisateur, formateur
 image: "/assets/images/presentations/FB vide.png"

@@ -1,4 +1,5 @@
 ---
+title: Maxime Robert
 nom: Maxime Robert
 metier: Comédien, improvisateur, formateur
 image: "/assets/images/presentations/MR vide.png"
