@@ -62,7 +62,7 @@ header {
 }
 
 .gros-titre {
-  font-size: 40px;
+  font-size: 40px !important;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -93,10 +93,22 @@ header {
 #texte-presentation {
   display: flex;
   border: solid #f2977d;
-  width: auto;
-  height: auto;
+  width: 50%;
+  height: 50%;
   border-style: dashed;
   border-width: 5px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#tete {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #description-presentation {
@@ -120,12 +132,13 @@ header {
   font-weight: 400;
   width: 100%;
   text-align: justify;
+  line-height: 30px;
 }
 
 #contenu > p {
   margin-left: 70px;
   margin-right: 70px;
-  line-height: 36px;
+  line-height: 40px;
 }
 
 #nom {

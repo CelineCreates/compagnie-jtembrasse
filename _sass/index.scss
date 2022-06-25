@@ -43,6 +43,7 @@ header {
   height: fit-content;
   margin-right: 50px;
   // float: right;
+  background: #f1f1f1;
 }
 
 #container-nav {
@@ -138,7 +139,8 @@ footer {
 
 #texte-accueil > p {
   font-weight: 400;
-  font-size: 20px;
+  // font-size: 20px;
+  font-size: 1.15vw;
   margin-bottom: -5px;
   margin-top: 10px;
   line-height: 31px;
@@ -262,7 +264,7 @@ header {
 #image-background-text {
   display: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1360px) {
   #main-menu {
     display: none;
   }
@@ -280,7 +282,7 @@ header {
     filter: drop-shadow(1px 1px #f2977d) drop-shadow(-1px -1px 1px #f2977d);
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
   #texte-accueil {
     padding-left: 50px;
     padding-right: 50px;
