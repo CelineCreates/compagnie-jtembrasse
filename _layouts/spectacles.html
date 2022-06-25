@@ -36,9 +36,7 @@ layout: default
           {% for spectacle in site.spectacles %}
           <div class="une-carte splide__slide">
             <div class="photo-spectacles">
-              <a href="{{ spectacle.url }}"
-                ><img src="{{ spectacle.image }}"
-              /></a>
+              <img src="{{ spectacle.image }}" />
             </div>
             <div class="texte-spectacles">
               <p>
@@ -48,7 +46,7 @@ layout: default
               </p>
             </div>
             <div class="container-btn-reserver">
-              <a href="{{ spectacle.lien-reservation }}"
+              <a href="{{ spectacle.url }}"
                 ><button class="btn-reserver">
                   <span>En savoir plus</span>
                 </button></a
