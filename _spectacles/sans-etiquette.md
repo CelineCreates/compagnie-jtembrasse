@@ -5,17 +5,15 @@ date-spectacle: 12 juin
 email-reservation: email@reservation.fr
 lien-fiche: https://www.google.fr
 image: "/assets/images/spectacles/Sans-etiquettes.jpg"
-youtube_url:
+youtube_url: 
 nature: fiche
-presentation:
-  " Un apéro entre amis, des bouteilles dégustées à l'aveugle. A chaque
+presentation: " Un apéro entre amis, des bouteilles dégustées à l'aveugle. A chaque
   vin goûté, un des deux exprime, avec ses mots, la vision que lui inspire ce nectar...
   <br> Ils s'épargnent jargon et réputation, pour situer ce temps entre amis sur les
   coteaux de la fiction. Pas de doute : pour eux, boire une gorgée de vin c'est démarrer
   une histoire. "
-distribution:
-  "Duo improvisé : Florian BRESLER & Maxime ROBERT <br> Mise en scène
-  et mise en scène live : Maxime ROBERT  <br> Musique : Martin ARNOUX"
+distribution: 'Duo improvisé : Florian BRESLER & Maxime ROBERT <br> Mise en scène
+  et mise en scène live : Maxime ROBERT  <br> Musique : Martin ARNOUX'
 production: Cie J't'embrasse
 lien-facebook: https://www.facebook.com/Cie-Jtembrasse-107606308245139
 lien-instagram: https://www.instagram.com/cie_jtembrasse/
