@@ -55,7 +55,11 @@
              <button class="btn-reserver btn-reserver-responsive cache"><span>En savoir plus</span></button>
             
             {{content}}
-           <button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button>
+            {% for spectacle in site.spectacles %}
+            {% if spectacle.title == page.titre-spectacle %}
+           <a href={{spectacle.url}}><button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button></a>
+           {% endif %}
+           {% endfor %}
           </div>
           
         </div>

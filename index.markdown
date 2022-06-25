@@ -5,6 +5,7 @@ custom_css: index
 custom_js: accueil
 image-accueil: assets/images/index/affiche-accueil.png
 layout: accueil
+titre-spectacle: TU RÊVES
 ---
 
 ##### Prochain spectacle
