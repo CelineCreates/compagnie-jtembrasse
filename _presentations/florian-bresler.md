@@ -7,7 +7,7 @@ image-equipe: "/assets/images/equipe/FB.png"
 nature: presentation
 ---
 
-<div>
+<div id="description-presentation">
   <p>
         Il commence sa formation en 2013 au conservatoire d’art dramatique du
         1er arrondissement ( Dir: Alain Gaintzburger ) en parallèle il rentre la

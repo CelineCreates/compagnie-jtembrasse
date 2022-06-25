@@ -54,7 +54,14 @@ nav#sidebar-menu {
   display: flex;
   justify-content: end;
 }
+#social-media-burger {
+  display: flex;
+}
 
+.social-media-burger {
+  width: 30px;
+  height: auto;
+}
 #content {
   max-width: 100vw !important;
   max-height: 100vh !important;

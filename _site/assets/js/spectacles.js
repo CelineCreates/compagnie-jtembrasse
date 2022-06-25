@@ -9,6 +9,7 @@ jQuery(function () {
     breakpoints: {
       990: {
         perPage: 1,
+        fixedWidth: "",
       },
     },
     rewind: true,

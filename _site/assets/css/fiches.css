@@ -42,6 +42,8 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #textes-fiche > p { font-size: calc(16px + 0.5vw); font-weight: 400; line-height: 40px; margin-top: 0px; }
 
+#partager > p { font-size: calc(16px + 0.2vw); }
+
 .btn-reserver { height: 47px; border-radius: 20px; background-color: #f2977d; border: transparent; }
 
 .btn-reserver > span { padding: 10px; color: white; font-weight: 400; font-size: 24px; }

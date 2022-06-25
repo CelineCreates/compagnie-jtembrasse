@@ -3,9 +3,11 @@ facebook:
   href: "https://www.facebook.com/"
   title: "Facebook"
   image: "/assets/images/footer/facebook.png"
+  image-burger: "/assets/images/menu/facebook.png"
 
 instagram:
   id: "cie_jtembrasse"
   href: "https://www.instagram.com/"
   title: "Instagram"
   image: "/assets/images/footer/instagram.png"
+  image-burger: "/assets/images/menu/instagram.png"

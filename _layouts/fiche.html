@@ -112,9 +112,11 @@ nature: fiche
 </div>
 
 <div id="trailer">
+  {% if page.youtube_url %}
   <div id="titre-deux">
     <h3>TEASER : {{page.title}}</h3>
   </div>
+  {% endif %}
 
   <div id="teaser">
     {% if page.youtube_url %}

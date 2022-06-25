@@ -76,6 +76,8 @@ footer { width: 100%; display: flex; justify-content: space-between; }
 
 #image-background-text { display: none; }
 
+@media screen and (max-width: 1300px) { header { margin-right: unset; } #container-logo { width: 100%; } }
+
 @media screen and (max-width: 1360px) { #main-menu { display: none; } #hamburger-menu { display: inline; } #content { padding-left: unset; width: 100%; } #main-logo { -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 #f2977d); filter: drop-shadow(1px 1px #f2977d) drop-shadow(-1px -1px 1px #f2977d); } }
 
 @media (max-width: 1360px) { #texte-accueil { padding-left: 50px; padding-right: 50px; margin-top: 60px; } }
