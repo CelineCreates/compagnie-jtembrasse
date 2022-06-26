@@ -4,21 +4,19 @@ lieu: Perreux-Sur-Marne
 date-spectacle: 11 & 12 mars
 lien-reservation: https://www.google.fr
 lien-fiche: https://www.google.fr
-image: "assets/images/spectacles/affiche-spectacle.png"
+image: assets/images/spectacles/affiche-spectacle.png
 youtube_url: https://www.youtube.com/embed/qgLPZoRyUfU
 nature: fiche
-presentation:
-  " Dans un bar, alors qu'il noie sa mélancolie à une heure tardive, un
+presentation: " Dans un bar, alors qu'il noie sa mélancolie à une heure tardive, un
   homme est mis au défi par son double imaginaire : se réapproprier son rêve d’enfant
   et prendre sa revanche sur la personne qui l’a empêché de le réaliser.  <br><br>
   Le tout en 24H chrono. <br> Le comédien demande au public :  <br> A quoi rêvait
   notre héros lorsqu'il était enfant ?  <br> A cause de qui notre héros a-t-il abandonné
   ?   <br> <br> Les réponses offertes par le public forment le point de départ du
   spectacle. "
-distribution:
-  "Seul en scène improvisé : Florian BRESLER  <br> Mise en scène et mise
+distribution: 'Seul en scène improvisé : Florian BRESLER  <br> Mise en scène et mise
   en scène live : Maxime ROBERT  <br> Mise en lumière improvisée : Antoine Noirant
-  <br>"
+  <br>'
 production: Cie J't'embrasse
 lien-facebook: https://www.facebook.com/Cie-Jtembrasse-107606308245139
 lien-instagram: https://www.instagram.com/cie_jtembrasse/
