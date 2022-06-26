@@ -5,7 +5,7 @@
 
 # --- Required options --- #
 
-baseurl: "compagnie-jtembrasse"
+baseurl: "/compagnie-jtembrasse"
 timezone: Europe/Paris
 
 # Name of website
