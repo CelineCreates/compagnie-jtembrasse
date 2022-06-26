@@ -31,4 +31,4 @@ defaults:
       type: presentations
     values:
       layout: presentation
-baseurl: "thomascrouzet.github.io"
+baseurl: ""
