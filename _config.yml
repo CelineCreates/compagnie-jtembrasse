@@ -21,14 +21,14 @@ collections:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ""
-      type: spectacles
-    values:
-      layout: fiche
-  - scope:
-      path: ""
-      type: presentations
-    values:
-      layout: presentation
-baseurl: "compagnie-jtembrasse"
+- scope:
+    path: ''
+    type: spectacles
+  values:
+    layout: fiche
+- scope:
+    path: ''
+    type: presentations
+  values:
+    layout: presentation
+baseurl: compagnie-jtembrasse
