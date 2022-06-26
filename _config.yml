@@ -1,4 +1,5 @@
 ---
+baseurl: "thomascrouzet.github.io/compagnie-jtembrasse"
 title: Compagnie Jtembrasse
 timezone: Europe/Paris
 collections:
@@ -9,7 +10,6 @@ collections:
     title: Photos Spectacles
     output: true
   posts:
-    title: Posts
     output: true
   presentations:
     title: Presentations
@@ -31,4 +31,3 @@ defaults:
       type: presentations
     values:
       layout: presentation
-baseurl: "compagnie-jtembrasse"
