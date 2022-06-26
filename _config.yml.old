@@ -1,0 +1,33 @@
+---
+baseurl: "compagnie-jtembrasse"
+title: Compagnie Jtembrasse
+timezone: Europe/Paris
+collections:
+  photo_gallery:
+    title: Photo Gallery
+    output: true
+  photo_spectacles:
+    title: Photos Spectacles
+    output: true
+  posts:
+    output: true
+  presentations:
+    title: Presentations
+    output: true
+  spectacles:
+    title: Spectacles
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: spectacles
+    values:
+      layout: fiche
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation
