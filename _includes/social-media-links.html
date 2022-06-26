@@ -4,15 +4,18 @@
   entry | first %} {% if sm[key].id %}
   <a
     target="_blank"
-    href="{{ sm[key].href }}{{ sm[key].id }}"
+    href="{{ site.baseurl }}/{{ sm[key].href }}{{ sm[key].id }}"
     title="{{ sm[key].title }}"
   >
-    <img src="{{ sm[key].image }}" alt=""
+    <img src="{{ site.baseurl }}/{{ sm[key].image }}" alt=""
   /></a>
   {% endif %} {% endfor %}
   <div>
     <button id="back-top">
-      <img src="/assets/images/navigation/Back_Top.svg" alt="" />
+      <img
+        src="{{ site.baseurl }}/assets/images/navigation/Back_Top.svg"
+        alt=""
+      />
     </button>
   </div>
 </div>

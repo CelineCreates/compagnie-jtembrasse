@@ -4,7 +4,7 @@
             	<nav id="main-menu">
         <ol id="menu">
            {% for item in site.data.navigation %}
-            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+            <li><a href="{{ site.baseurl }}/{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name }}
               </a></li>
             {% endfor %}
@@ -17,7 +17,7 @@
           <h3>X</h3>
           <ol>
              {% for item in site.data.navigation %}
-            <li><a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+            <li><a href="{{ site.baseurl }}/{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name }}
               </a></li>
             {% endfor %}

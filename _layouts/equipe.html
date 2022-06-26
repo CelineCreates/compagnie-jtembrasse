@@ -5,27 +5,36 @@ layout: default
 {{content}}
 
 <div name="photo-equipe" id="photo-equipe">
-    <h2 class="gros-titre">Présentation de l'équipe</h2>
-    <div id="photo">
-        {% for presentation in site.presentations %}
-        <div class="une_photo_equipe">
-            <a href="{{presentation.url}}"><img src="{{presentation.image-equipe}}" /></a>
-        </div>
-        {% endfor %}
+  <h2 class="gros-titre">Présentation de l'équipe</h2>
+  <div id="photo">
+    {% for presentation in site.presentations %}
+    <div class="une_photo_equipe">
+      <a href="{{ site.baseurl }}/{{presentation.url}}"
+        ><img src="{{ site.baseurl }}/{{presentation.image-equipe}}"
+      /></a>
     </div>
+    {% endfor %}
+  </div>
 </div>
 <div id="galerie">
-    <h2 class="gros-titre">Galerie</h2>
-    <div id="nanogallery2" data-nanogallery2='{
+  <h2 class="gros-titre">Galerie</h2>
+  <div
+    id="nanogallery2"
+    data-nanogallery2='{
                         "thumbnailHeight":  150,
                         "thumbnailWidth":   150,
-                        "itemsBaseURL":     {{site.url}}
-                      }'>
-        <!-- gallery content -->
-        {% for image in site.photo_gallery %}
-        <a href="{{site.url}}/{{ image.image_path }}" data-ngThumb="{{ image.image_path }}">
+                        "itemsBaseURL":     {{site.baseurl}}
+                      }'
+  >
+    <!-- gallery content -->
+    {% for image in site.photo_gallery %}
+    <a
+      href="{{ site.baseurl }}/{{ image.image_path }}"
+      data-ngThumb="{{ site.baseurl }}/{{ image.image_path }}"
+    >
       {{ image.title}}
-    </a> {% endfor %}
-        <!-- ### end of the gallery definition ### -->
-    </div>
+    </a>
+    {% endfor %}
+    <!-- ### end of the gallery definition ### -->
+  </div>
 </div>

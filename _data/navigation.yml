@@ -1,8 +1,8 @@
 - name: Accueil
-  link: /
+  link: index.html
 - name: Spectacles
-  link: /spectacles.html
+  link: spectacles.html
 - name: L'équipe
-  link: /equipe.html
+  link: equipe.html
 - name: Formations
-  link: /formations.html
+  link: formations.html
