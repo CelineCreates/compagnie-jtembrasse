@@ -5,8 +5,8 @@ layout: equipe
 custom_css: equipe
 custom_js: equipe
 nature: equipe
-photo_presentation_1: "/assets/images/equipe/FB.png"
-photo_presentation_2: "/assets/images/equipe/MR.png"
+photo_presentation_1: "assets/images/equipe/FB.png"
+photo_presentation_2: "assets/images/equipe/MR.png"
 ---
 
 <div id="presentation">

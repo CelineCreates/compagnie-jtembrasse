@@ -12,7 +12,10 @@ nature: fiche
   <div id="fiche" class="fiche-mobile">
     <div id="image-affiche">
       <div id="image-max">
-        <img class="image-affiche-max" src="{{page.image}}" />
+        <img
+          class="image-affiche-max"
+          src="{{ site.baseurl }}/{{page.image}}"
+        />
       </div>
       <div class="titre_button">
         <div id="clic">
@@ -34,15 +37,15 @@ nature: fiche
         data-nanogallery2='{
                         "thumbnailHeight":  150,
                         "thumbnailWidth":   150,
-                        "itemsBaseURL":     {{site.url}}
+                        "itemsBaseURL":     {{ site.baseurl }}/
                       }'
       >
         <!-- gallery content -->
         {% for image in site.photo_spectacles %} {% if image.spectacle ==
         page.title %}
         <a
-          href="{{site.url}}{{ image.image_path }}"
-          data-ngThumb="{{site.url}}{{ image.image_path }}"
+          href="{{ site.baseurl }}/{{ image.image_path }}"
+          data-ngThumb="{{ site.baseurl }}/{{ image.image_path }}"
         >
           {{ image.title}}
         </a>
@@ -59,39 +62,28 @@ nature: fiche
         data-nanogallery2='{
                         "thumbnailHeight":  100,
                         "thumbnailWidth":   100,
-                        "itemsBaseURL":     {{site.url}}
+                        "itemsBaseURL":     {{ site.baseurl }}
                       }'
       >
         <!-- gallery content -->
         {% for image in site.photo_spectacles %} {% if image.spectacle ==
         page.title %}
         <a
-          href="{{site.url}}{{ image.image_path }}"
-          data-ngThumb="{{site.url}}{{ image.image_path }}"
+          href="{{ site.baseurl }}/{{ image.image_path }}"
+          data-ngThumb="{{ site.baseurl }}/{{ image.image_path }}"
         >
           {{ image.title}}
         </a>
         {% endif %} {% endfor %}
         <!-- ### end of the gallery definition ### -->
       </div>
-      <!-- <div id="images-min">
-        <div class="splide" role="group" aria-label="photos spectacle">
-          <div class="splide__track">
-            <ul class="splide__list">
-              {% for photo in site.photo_spectacles %} {% if photo.spectacle ==
-              page.title %}
-              <li class="splide__slide">
-                <img width="125px" src="{{ photo.image_path }}" />
-              </li>
-
-              {% endif %} {% endfor %}
-            </ul>
-          </div>
-        </div> -->
     </div>
     <div id="image-affiche" class="image-affiche-desktop">
       <div id="image-max" class="image-max-desktop">
-        <img class="image-affiche-max" src="{{page.image}}" />
+        <img
+          class="image-affiche-max"
+          src="{{ site.baseurl }}/{{page.image}}"
+        />
       </div>
     </div>
     <div id="textes-fiche" class="textes-fiche-desktop">
@@ -153,12 +145,12 @@ nature: fiche
         <div id="reseaux">
           <div id="fb">
             <a href="{{page.lien-facebook}}"
-              ><img src="/assets/images/footer/facebook.png"
+              ><img src="{{ site.baseurl }}/assets/images/footer/facebook.png"
             /></a>
           </div>
           <div id="insta">
             <a href="{{page.lien-instagram}}"
-              ><img src="/assets/images/footer/instagram.png"
+              ><img src="{{ site.baseurl }}/assets/images/footer/instagram.png"
             /></a>
           </div>
         </div>

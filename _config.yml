@@ -1,6 +1,35 @@
----
-title: Compagnie Jtembrasse
+# Welcome to Beautiful Jekyll!
+# This config file is meant for settings that affect your entire website. When you first
+# set up your website you should go through all these settings and edit them, but after
+# the initial set up you won't need to come back to this file often.
+
+# --- Required options --- #
+url: ""
+baseurl: "/compagnie-jtembrasse"
 timezone: Europe/Paris
+
+# Name of website
+title: Compagnie Jtembrasse
+
+# Your name to show in the footer
+author: Céline Creates
+
+# The keywords to associate with your website, for SEO purposes
+#keywords: "compagnie,jtembrasse,theatre"
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  - scope:
+      path: ""
+      type: spectacles
+    values:
+      layout: fiche
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation
+
 collections:
   photo_gallery:
     title: Photo Gallery
@@ -9,7 +38,6 @@ collections:
     title: Photos Spectacles
     output: true
   posts:
-    title: Posts
     output: true
   presentations:
     title: Presentations
@@ -20,15 +48,14 @@ collections:
   uploads:
     title: Uploads
     output: true
-defaults:
-- scope:
-    path: ''
-    type: spectacles
-  values:
-    layout: fiche
-- scope:
-    path: ''
-    type: presentations
-  values:
-    layout: presentation
-baseurl: thomascrouzet.github.io
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - screenshot.png
+  - docs/
