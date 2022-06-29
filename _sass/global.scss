@@ -67,7 +67,8 @@ nav#sidebar-menu {
   max-height: 100vh !important;
 }
 
-#main-logo {
+#main-logo,
+#main-logo-mobile {
   padding: 10px !important;
 }
 
@@ -211,7 +212,7 @@ footer {
   right: 0;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1360px) {
   #main-menu {
     display: none;
   }

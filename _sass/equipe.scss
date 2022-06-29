@@ -106,7 +106,8 @@ header {
 }
 
 #presentation-content > p {
-  font-size: calc(16px + 0.5vw);
+  // font-size: calc(16px + 0.5vw);
+  font-size: 1.15vw;
   text-align: justify;
   line-height: 40px;
 }
