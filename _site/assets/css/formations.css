@@ -4,7 +4,7 @@
 
 #textes-prestation { width: 80%; align-self: center; }
 
-p, .info-contact { font-size: calc(14px + 0.5vw); }
+p, .info-contact { font-size: calc(14px + 0.25vw); }
 
 #menu li { display: inline; }
 

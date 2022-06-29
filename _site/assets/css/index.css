@@ -42,11 +42,11 @@ footer { width: 100%; display: flex; justify-content: space-between; }
 
 #content { padding-left: 150px; width: calc(100vw - 173px); }
 
-#texte-accueil > p { font-weight: 400; font-size: calc(14px + 0.5vw); margin-bottom: -5px; margin-top: 10px; line-height: 150%; }
+#texte-accueil > p { font-weight: 400; font-size: calc(14px + 0.25vw); margin-bottom: -5px; margin-top: 10px; line-height: 180%; }
 
 #texte-accueil > h5 { font-weight: 550; font-size: 20px; margin-bottom: 0px; margin-top: 5px; }
 
-#texte-accueil > h1 { font-weight: 900; font-size: 96px; color: #f2977d; margin-bottom: 0px; margin-top: 15px; }
+#texte-accueil > h1 { font-weight: 900; font-size: 83px; color: #f2977d; margin-bottom: 0px; margin-top: 15px; }
 
 #content-accueil { width: 100%; }
 

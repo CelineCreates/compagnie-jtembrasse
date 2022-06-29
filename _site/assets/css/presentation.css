@@ -35,7 +35,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 /* Bordure comme je veux background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='5' stroke-dasharray='400 220' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");  */
 #texte-presentation > p { width: 100%; align-self: center; text-align: center; }
 
-#contenu { font-size: calc(14px + 0.5vw); font-weight: 400; width: 100%; text-align: justify; line-height: 150%; }
+#contenu { font-size: calc(14px + 0.25vw); font-weight: 400; width: 100%; text-align: justify; line-height: 150%; }
 
 #contenu > p { margin-left: 70px; margin-right: 70px; line-height: 40px; }
 
