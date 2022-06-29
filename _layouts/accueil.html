@@ -56,11 +56,12 @@
         <div id="content-accueil">
           <img id="image-background-text" src="{{page.image-accueil}}" />
           <div id="texte-accueil">
-             <button class="btn-reserver btn-reserver-responsive cache"><span>En savoir plus</span></button>
-            
-            {{content}}
             {% for spectacle in site.spectacles %}
             {% if spectacle.title == page.titre-spectacle %}
+             <a href="{{site.baseurl}}/{{spectacle.url}}"><button class="btn-reserver btn-reserver-responsive"><span>En savoir plus</span></button></a>
+            
+            {{content}}
+          
            <a href="{{site.baseurl}}/{{spectacle.url}}"><button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button></a>
            {% endif %}
            {% endfor %}

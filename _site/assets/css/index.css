@@ -14,6 +14,8 @@ header { display: flex; width: min-content; height: fit-content; margin-right: 5
 
 #container-nav { width: min-content; }
 
+.btn-reserver-responsive { display: none; }
+
 body { flex-direction: column; }
 
 #content { display: flex; }

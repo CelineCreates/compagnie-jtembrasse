@@ -28,7 +28,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #texte-prestation { text-align: center; font-size: 16px; }
 
-.btn-reserver { width: 138px; height: 44px; border-radius: 20px; background-color: #f2977d; border: transparent; }
+.btn-reserver { width: 138px; height: 44px; border-radius: 20px; background-color: #f2977d; border: transparent; margin-bottom: 30px; }
 
 .btn-reserver > span { padding: 10px; color: white; font-weight: 400; font-size: 24px; }
 
