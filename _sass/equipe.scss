@@ -107,9 +107,11 @@ header {
 
 #presentation-content > p {
   // font-size: calc(16px + 0.5vw);
-  font-size: 1.15vw;
+  // font-size: 1.15vw;
+  font-size: calc(14px + 0.5vw);
   text-align: justify;
-  line-height: 40px;
+  // line-height: 40px;
+  line-height: 150%;
 }
 
 #presentation-content > h2 {
@@ -127,8 +129,8 @@ header {
 }
 
 #resumer-content {
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 150%;
+  font-size: calc(14px + 0.5vw);
   text-align: center;
 }
 #resumer-content > P {

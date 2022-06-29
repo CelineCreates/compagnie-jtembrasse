@@ -34,15 +34,15 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #image-affiche { display: flex; width: 100%; justify-content: space-around; }
 
-#image-max { margin-left: 20px; justify-content: center; align-items: center; display: flex; width: auto; }
+#image-max { justify-content: center; align-items: center; display: flex; width: 50%; }
 
-#textes-fiche { display: flex; width: 100%; flex-direction: column; margin-right: 80px; margin-left: 20px; }
+#textes-fiche { display: flex; width: 100%; flex-direction: column; margin-right: 2%; margin-left: 20px; }
 
-.titre-fiche { color: #f2977d; font-size: 96px; font-weight: 900; margin-bottom: 0px; margin-top: 35px; display: flex; align-self: end; }
+.titre-fiche { width: 100%; color: #f2977d; font-size: 96px; font-weight: 900; margin-bottom: 0px; margin-top: 35px; display: flex; align-self: end; justify-content: center; }
 
 .titre-fiche.desktop { align-self: unset; margin-bottom: 30px; }
 
-#textes-fiche > p { font-size: calc(10px + 0.8vw); font-weight: 400; line-height: 40px; margin-top: 0px; }
+#textes-fiche > p { font-size: calc(14px + 0.5vw); font-weight: 400; line-height: 150%; margin-top: 0px; }
 
 #partager > p { font-size: calc(16px + 0.2vw); }
 
@@ -50,7 +50,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 .btn-reserver > span { padding: 10px; color: white; font-weight: 400; font-size: 24px; }
 
-#clic { display: flex; align-self: flex-end; right: 10px; right: 300px; margin-bottom: 0.5%; margin-right: 30px; margin-top: 30px; }
+#clic { display: flex; align-self: flex-end; right: 10px; right: 300px; margin-bottom: 5%; margin-right: 30px; margin-top: 30px; }
 
 #teaser { display: flex; width: 100%; }
 
@@ -70,7 +70,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #details { display: flex; height: fit-content; width: 80%; border-radius: 41px; text-align: center; justify-content: center; line-height: 40px; flex-direction: column; background-color: rgba(22, 22, 22, 0.05); align-self: center; }
 
-#details > p { font-size: calc(16px + 0.4vw); }
+#details > p { font-size: calc(16px + 0.4vw); padding: 2%; }
 
 .rose { color: #f2977d; text-transform: uppercase; }
 
@@ -82,7 +82,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #pratique { display: flex; justify-content: center; margin-top: 40px; }
 
-.titre_button { display: flex; flex-direction: column; justify-content: space-between; }
+.titre_button { display: flex; flex-direction: column; justify-content: space-between; width: 100%; align-items: center; }
 
 .fiche-mobile { display: none !important; width: 80%; justify-self: center; align-self: center; }
 
@@ -96,12 +96,12 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #textes-fiche.textes-fiche-desktop { width: 50%; justify-content: center; }
 
-.image-affiche-max { border-radius: 5%; width: 100%; height: auto; }
+.image-affiche-max { max-width: 400px; border-radius: 5%; width: 100%; height: auto; min-width: 300px; }
 
 .nGY2GThumbnail { border-radius: 5% !important; }
 
 @media all and (max-width: 1436px) { .fiche-desktop { display: none !important; } .fiche-mobile { display: flex !important; } #fiche { flex-direction: column; } .splide__slide img { width: 100%; height: 100%; object-fit: cover; } #textes-fiche { margin-right: unset; margin-left: unset; } }
 
-@media all and (max-width: 1027px) { #details { width: 100%; } #image-max { display: block; } #fiche { flex-direction: column; padding: 20px; } #box { flex-direction: row-reverse; } #textes-fiche { margin-left: 0%; margin-right: 0%; } #content { padding-left: 0%; padding-right: 0%; } #teaser { display: flex; flex-direction: column; } #distribution { text-align: center; } #partager { text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; } }
+@media all and (max-width: 1027px) { #details { width: 100%; } #fiche { flex-direction: column; } #box { flex-direction: row-reverse; } #textes-fiche { margin-left: 0%; margin-right: 0%; } #content { padding-left: 0%; padding-right: 0%; } #teaser { display: flex; flex-direction: column; } #distribution { text-align: center; } #partager { text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; } }
 
 /*# sourceMappingURL=fiches.css.map */

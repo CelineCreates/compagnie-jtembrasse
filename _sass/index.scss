@@ -140,10 +140,11 @@ footer {
 #texte-accueil > p {
   font-weight: 400;
   // font-size: 20px;
-  font-size: 1.15vw;
+  // font-size: 1.15vw;
+  font-size: calc(14px + 0.5vw);
   margin-bottom: -5px;
   margin-top: 10px;
-  line-height: 31px;
+  line-height: 150%;
 }
 
 #texte-accueil > h5 {
@@ -351,6 +352,9 @@ header {
 }
 
 @media (max-width: 900px) {
+  footer {
+    margin-top: 10px;
+  }
   header {
     background-color: unset;
   }
@@ -382,8 +386,9 @@ header {
   }
   #container-logo {
     position: relative;
-    width: calc(100% - 20px);
+    // width: calc(100% - 20px);
     display: flex;
+    min-height: 80px;
   }
   #content {
     padding-left: 0;
@@ -412,7 +417,7 @@ header {
     position: relative;
   }
   #texte-accueil {
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;

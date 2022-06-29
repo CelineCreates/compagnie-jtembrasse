@@ -40,7 +40,7 @@ footer { width: 100%; display: flex; justify-content: space-between; }
 
 #content { padding-left: 150px; width: calc(100vw - 173px); }
 
-#texte-accueil > p { font-weight: 400; font-size: 1.15vw; margin-bottom: -5px; margin-top: 10px; line-height: 31px; }
+#texte-accueil > p { font-weight: 400; font-size: calc(14px + 0.5vw); margin-bottom: -5px; margin-top: 10px; line-height: 150%; }
 
 #texte-accueil > h5 { font-weight: 550; font-size: 20px; margin-bottom: 0px; margin-top: 5px; }
 
@@ -96,6 +96,6 @@ footer { width: 100%; display: flex; justify-content: space-between; }
 
 @media (max-width: 280px) { #texte-accueil { max-height: 49%; } }
 
-@media (max-width: 900px) { header { background-color: unset; } .btn-reserver-responsive { display: initial; } .btn-reserver-desktop { display: none; } #image-background-text { display: block; } #texte-accueil > h1 { font-size: 49px; } #texte-accueil > p { font-size: 16px; } #texte-accueil > h5 { font-size: 16px; } img#image-background-text { margin: auto; } #container-logo { position: relative; width: calc(100% - 20px); display: flex; } #content { padding-left: 0; flex-direction: column; width: 100%; height: auto; max-height: none; } #photo-accueil { width: 100%; max-width: none; height: auto; } #photo-accueil > img { margin-left: 0; display: none; } #footer { position: relative; } #core-content { max-width: none; width: 100%; } #reseaux { position: relative; } #texte-accueil { margin-bottom: 15px; padding-left: 10px; padding-right: 10px; position: absolute; overflow: scroll; height: 50%; text-align: center; background: rgba(211, 211, 211, 0.8); } #image-texte-accueil { display: block; } #content-accueil { align-items: end; display: flex; } body { max-height: unset; height: auto; } }
+@media (max-width: 900px) { footer { margin-top: 10px; } header { background-color: unset; } .btn-reserver-responsive { display: initial; } .btn-reserver-desktop { display: none; } #image-background-text { display: block; } #texte-accueil > h1 { font-size: 49px; } #texte-accueil > p { font-size: 16px; } #texte-accueil > h5 { font-size: 16px; } img#image-background-text { margin: auto; } #container-logo { position: relative; display: flex; min-height: 80px; } #content { padding-left: 0; flex-direction: column; width: 100%; height: auto; max-height: none; } #photo-accueil { width: 100%; max-width: none; height: auto; } #photo-accueil > img { margin-left: 0; display: none; } #footer { position: relative; } #core-content { max-width: none; width: 100%; } #reseaux { position: relative; } #texte-accueil { padding-left: 10px; padding-right: 10px; position: absolute; overflow: scroll; height: 50%; text-align: center; background: rgba(211, 211, 211, 0.8); } #image-texte-accueil { display: block; } #content-accueil { align-items: end; display: flex; } body { max-height: unset; height: auto; } }
 
 /*# sourceMappingURL=index.css.map */
