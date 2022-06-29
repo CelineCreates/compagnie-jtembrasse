@@ -375,6 +375,9 @@ header {
 }
 
 @media all and (max-width: 1027px) {
+  #titre-fiche {
+    font-size: 15vw;
+  }
   #details {
     width: 100%;
   }
