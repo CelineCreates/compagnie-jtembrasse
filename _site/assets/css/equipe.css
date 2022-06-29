@@ -32,7 +32,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #presentation-content > h2 { font-size: 40px; font-weight: 900; text-align: center; color: black; margin-top: 37px; }
 
-.gros-titre { font-size: 40px !important; font-weight: 900 !important; text-transform: uppercase !important; }
+.gros-titre { font-size: 40px !important; font-weight: 900 !important; text-transform: uppercase !important; line-height: 100%; }
 
 #resumer-content { line-height: 150%; font-size: calc(14px + 0.5vw); text-align: center; }
 
