@@ -264,8 +264,27 @@ header {
 #image-background-text {
   display: none;
 }
+#main-logo,
+#main-logo-link {
+  display: flex;
+}
+#main-logo-mobile-link {
+  display: none;
+}
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1360px) {
+  #main-logo-mobile {
+    width: 35vw;
+    display: flex;
+    max-width: 300px;
+  }
+  #main-logo-mobile-link {
+    display: block;
+  }
+  #main-logo,
+  #main-logo-link {
+    display: none;
+  }
   header {
     margin-right: unset;
   }
@@ -286,10 +305,11 @@ header {
     width: 100%;
   }
 
-  #main-logo {
-    -webkit-filter: drop-shadow(1px 1px 0 black)
-      drop-shadow(-1px -1px 0 #f2977d);
-    filter: drop-shadow(1px 1px #f2977d) drop-shadow(-1px -1px 1px #f2977d);
+  #main-logo,
+  #main-logo-mobile {
+    // -webkit-filter: drop-shadow(1px 1px 0 black)
+    //   drop-shadow(-1px -1px 0 #f2977d);
+    // filter: drop-shadow(1px 1px #f2977d) drop-shadow(-1px -1px 1px #f2977d);
   }
 }
 @media (max-width: 1360px) {
@@ -331,6 +351,9 @@ header {
 }
 
 @media (max-width: 900px) {
+  header {
+    background-color: unset;
+  }
   .btn-reserver-responsive {
     display: initial;
   }

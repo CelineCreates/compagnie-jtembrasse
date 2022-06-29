@@ -22,6 +22,17 @@
               </a></li>
             {% endfor %}
           </ol>
+          <div id="social-media-burger">
+{% assign sm = site.data.social-media %} {% for entry in sm %} {% assign key =
+  entry | first %} {% if sm[key].id %}
+  <a
+    target="_blank"
+    href="{{ sm[key].href }}{{ sm[key].id }}"
+    title="{{ sm[key].title }}"
+  >
+    <img class="social-media-burger" src="{{ site.baseurl }}/{{ sm[key].image-burger }}" alt=""
+  /></a>
+  {% endif %} {% endfor %}
         </nav>
       </label>
         </nav>

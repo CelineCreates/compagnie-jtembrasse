@@ -28,7 +28,7 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #presentation-content { display: flex; flex-direction: column; width: 100%; text-align: justify; padding-left: 20px; padding-right: 20px; }
 
-#presentation-content > p { font-size: calc(16px + 0.5vw); text-align: justify; line-height: 40px; }
+#presentation-content > p { font-size: 1.15vw; text-align: justify; line-height: 40px; }
 
 #presentation-content > h2 { font-size: 40px; font-weight: 900; text-align: center; color: black; margin-top: 37px; }
 

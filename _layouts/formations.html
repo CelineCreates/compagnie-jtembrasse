@@ -17,9 +17,10 @@ custom_js: formations
     <p>{{page.texte_prestation | markdownify}}</p>
   </div>
   <div id="inscrire">
-    <button class="btn-reserver">
+    <a href="mailto:{{page.email}}"><button class="btn-reserver">
       <span>S'inscrire</span>
-    </button>
+    </button></a>
+    
   </div>
   <div id="textes-prestation">
     <div id="details">
@@ -32,9 +33,10 @@ custom_js: formations
             class="fleche-droite"
             src="assets/images/footer/top.png"
           />
- <span class="info-contact">
+          <a href="mailto:{{page.email}}"> <span class="info-contact">
           {{page.email}}
-        </span>
+        </span> </a>
+
         </div>
        
      

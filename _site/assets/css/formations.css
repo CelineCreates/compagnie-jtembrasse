@@ -2,7 +2,7 @@
 
 #content { width: 100%; height: 100%; }
 
-p, .info-contact { font-size: calc(16px + 0.5vw); }
+p, .info-contact { font-size: 1.15vw; }
 
 #menu li { display: inline; }
 

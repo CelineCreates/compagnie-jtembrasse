@@ -30,7 +30,7 @@ nav#sidebar-menu { z-index: 999; }
 
 #content { max-width: 100vw !important; max-height: 100vh !important; }
 
-#main-logo { padding: 10px !important; }
+#main-logo, #main-logo-mobile { padding: 10px !important; }
 
 body { margin: unset; }
 
@@ -68,7 +68,7 @@ footer { align-items: center; text-align: center; justify-content: center; width
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu { visibility: visible; right: 0; }
 
-@media screen and (max-width: 1300px) { #main-menu { display: none; } #hamburger-menu { display: block; position: relative; margin-right: 10px; } #container-nav { display: flex; justify-content: end; } }
+@media screen and (max-width: 1360px) { #main-menu { display: none; } #hamburger-menu { display: block; position: relative; margin-right: 10px; } #container-nav { display: flex; justify-content: end; } }
 
 @media screen and (max-width: 900px) { footer > #texte-footer > #texte-un { font-size: 10px; } footer > #texte-footer > #texte-deux { font-size: 11px; } body { margin: unset; } #texte-footer { margin: 5px; } #contenu { font-size: 16px !important; } .gros-titre { font-size: 30px !important; } }
 

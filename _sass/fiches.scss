@@ -6,7 +6,7 @@
   width: 100%;
   height: 100%;
   // padding-right: 200px;
-  display: grid;
+  // display: grid;
 }
 #fiche.fiche-desktop {
   display: flex;
@@ -16,10 +16,12 @@
 #tout {
   display: flex;
   justify-content: center;
+  // width: 80%;
+  justify-self: center;
 }
 
 #trailer {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -72,7 +74,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
+#infos {
+  display: contents;
+}
 #content {
   // padding-left: 150px;
 }
@@ -143,7 +147,9 @@ header {
 }
 
 #textes-fiche > p {
-  font-size: calc(16px + 0.5vw);
+  // font-size: calc(16px + 1.15vw);
+  // font-size: 1.15vw;
+  font-size: calc(10px + 0.8vw);
   font-weight: 400;
   line-height: 40px;
   margin-top: 0px;
@@ -230,7 +236,7 @@ header {
 #details {
   display: flex;
   height: fit-content;
-  width: 100%;
+  width: 80%;
   border-radius: 41px;
   text-align: center;
   justify-content: center;
@@ -238,6 +244,7 @@ header {
   flex-direction: column;
   background-color: rgba(22, 22, 22, 0.05);
   // padding: 20px;
+  align-self: center;
 }
 
 #details > p {
@@ -283,6 +290,9 @@ header {
 }
 .fiche-mobile {
   display: none !important;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
 }
 
 .fiche-desktop {
@@ -347,9 +357,17 @@ header {
     height: 100%;
     object-fit: cover;
   }
+
+  #textes-fiche {
+    margin-right: unset;
+    margin-left: unset;
+  }
 }
 
 @media all and (max-width: 1027px) {
+  #details {
+    width: 100%;
+  }
   #image-max {
     display: block;
   }
@@ -367,15 +385,15 @@ header {
   #textes-fiche > p,
   #textes-fiche > h1,
   #details {
-    padding: 15px;
+    // padding: 15px;
   }
   #content {
     padding-left: 0%;
     padding-right: 0%;
   }
   #tout {
-    padding-left: 50px;
-    padding-right: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
   }
   #teaser {
     display: flex;
