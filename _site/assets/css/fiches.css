@@ -102,6 +102,6 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 @media all and (max-width: 1436px) { .fiche-desktop { display: none !important; } .fiche-mobile { display: flex !important; } #fiche { flex-direction: column; } .splide__slide img { width: 100%; height: 100%; object-fit: cover; } #textes-fiche { margin-right: unset; margin-left: unset; } }
 
-@media all and (max-width: 1027px) { #titre-fiche { font-size: 15vw; } #details { width: 100%; } #fiche { flex-direction: column; } #box { flex-direction: row-reverse; } #textes-fiche { margin-left: 0%; margin-right: 0%; } #content { padding-left: 0%; padding-right: 0%; } #teaser { display: flex; flex-direction: column; } #distribution { text-align: center; } #partager { text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; } }
+@media all and (max-width: 1027px) { .titre-fiche { font-size: 15vw; } #details { width: 100%; } #fiche { flex-direction: column; } #box { flex-direction: row-reverse; } #textes-fiche { margin-left: 0%; margin-right: 0%; } #content { padding-left: 0%; padding-right: 0%; } #teaser { display: flex; flex-direction: column; } #distribution { text-align: center; } #partager { text-align: center; width: 100%; display: flex; align-items: center; justify-content: center; } }
 
 /*# sourceMappingURL=fiches.css.map */
