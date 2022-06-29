@@ -28,14 +28,14 @@ header { width: 100%; display: flex; justify-content: space-between; }
 
 #texte-presentation { display: flex; border: solid #f2977d; width: 50%; height: 50%; border-style: dashed; border-width: 5px; align-content: center; align-items: center; justify-content: center; }
 
-#tete { width: 50%; height: 50%; display: flex; align-content: center; align-items: center; justify-content: center; }
+#tete { min-width: 200px; width: 50%; height: 50%; display: flex; align-content: center; align-items: center; justify-content: center; }
 
-#description-presentation { padding: 50px; word-break: break-word; }
+#description-presentation { padding: 2%; word-break: break-word; }
 
 /* Bordure comme je veux background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='5' stroke-dasharray='400 220' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");  */
 #texte-presentation > p { width: 100%; align-self: center; text-align: center; }
 
-#contenu { font-size: 20px; font-weight: 400; width: 100%; text-align: justify; line-height: 30px; }
+#contenu { font-size: calc(14px + 0.5vw); font-weight: 400; width: 100%; text-align: justify; line-height: 150%; }
 
 #contenu > p { margin-left: 70px; margin-right: 70px; line-height: 40px; }
 
