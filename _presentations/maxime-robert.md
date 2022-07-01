@@ -10,7 +10,7 @@ nature: presentation
 <div id="description-presentation">
   
   
-<p>Membre du Collectif Les Parvenus</p>
+<p>Membre du Collectif et co-fondateur Les Parvenus</p>
 <br>
 
 <p>Il débute sa formation en Art dramatique au Conservatoire de Région de Nantes en 2008, avant de la poursuivre au Conservatoire Gustave Charpentier à Paris aux côtés de Jean-Luc Galmiche. <br>
