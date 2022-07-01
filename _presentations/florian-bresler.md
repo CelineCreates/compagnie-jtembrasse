@@ -9,7 +9,7 @@ nature: presentation
 
 <div id="description-presentation">
   <p>
-        Il commence sa formation en 2013 au conservatoire d’art dramatique du
+        Il  sa formation en 2013 au conservatoire d’art dramatique du
         1er arrondissement ( Dir: Alain Gaintzburger ) en parallèle il rentre la
         même année dans la ligue d’improvisation LUDI-IDF (la ligue
         universitaire d’improvisation d’Ile-de-France). Apres le conservatoire
