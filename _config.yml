@@ -31,7 +31,7 @@ defaults:
     type: presentations
   values:
     layout: presentation
-baseurl: "/compagnie-jtembrasse"
+baseurl: "/"
 author: Céline Creates
 exclude:
 - CHANGELOG.md
