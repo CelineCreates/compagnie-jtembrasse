@@ -58,11 +58,11 @@
           <div id="texte-accueil">
             {% for spectacle in site.spectacles %}
             {% if spectacle.title == page.titre-spectacle %}
-             <a href="{{site.baseurl}}/{{spectacle.url}}"><button class="btn-reserver btn-reserver-responsive"><span>En savoir plus</span></button></a>
+             <a href="{{spectacle.url}}"><button class="btn-reserver btn-reserver-responsive"><span>En savoir plus</span></button></a>
             
             {{content}}
           
-           <a href="{{site.baseurl}}/{{spectacle.url}}"><button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button></a>
+           <a href="{{spectacle.url}}"><button class="btn-reserver btn-reserver-desktop"><span>En savoir plus</span></button></a>
            {% endif %}
            {% endfor %}
           </div>
