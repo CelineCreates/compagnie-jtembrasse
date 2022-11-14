@@ -3,7 +3,7 @@ title: Accueil - Cie J't'embrasse
 position: 0
 custom_css: index
 custom_js: accueil
-image-accueil: "/uploads/bundo-kim-a8MSzwD3pJA-unsplash.jpg"
+image-accueil: assets/images/index/affiche-accueil.png
 titre-spectacle: TU RÊVES
 layout: accueil
 ---
