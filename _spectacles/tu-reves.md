@@ -20,6 +20,7 @@ distribution: 'Seul en scène improvisé : Florian BRESLER  <br> Mise en scène 
 production: Cie J't'embrasse
 lien-facebook: https://www.facebook.com/Cie-Jtembrasse-107606308245139
 lien-instagram: https://www.instagram.com/cie_jtembrasse/
+lien-dossier-artistique: "/uploads/TU%20REVES%20-%20Dossier%20Artistique.pdf"
 ---
 
   <div id="infos">
