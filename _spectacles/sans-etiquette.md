@@ -17,7 +17,6 @@ distribution: 'Duo improvis√© : Florian BRESLER & Maxime ROBERT <br> Mise en sc√
 production: Cie J't'embrasse
 lien-facebook: https://www.facebook.com/Cie-Jtembrasse-107606308245139
 lien-instagram: https://www.instagram.com/cie_jtembrasse/
-lien-dossier-artistique: https://www.facebook.com/Cie-Jtembrasse-107606308245139
 ---
 
   <div id="infos">
