@@ -14,7 +14,7 @@ nature: presentation
         même année dans la ligue d’improvisation LUDI-IDF (la ligue
         universitaire d’improvisation d’Ile-de-France). Apres le conservatoire
         il poursuit sa formation à l’Atelier Blanche Salant & Paul Weaver. Puis
-        il se forme a la méthodologie de l’acteur avec Alexandre Del Perugia.
+        il se forme a la méthodologie de l’acteur avec Alexandre Del .
       </p>
       <p>
         Il joue dans de nombreux spectacles d’improvisations sous diverses
